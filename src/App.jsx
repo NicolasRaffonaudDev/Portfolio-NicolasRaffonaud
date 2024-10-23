@@ -2,6 +2,11 @@ import './App.css'
 import { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
+import AboutMe from './components/AboutMe/AboutMe';
+import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
+import ContactMe from './components/ContactMe/ContactMe';
+import Skills from './components/Skills/Skills';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -17,7 +22,15 @@ function App() {
 
   return (
     <>
-      { loading ? <LoadingScreen /> : <Header />}
+      { loading ? <LoadingScreen /> : 
+      <>
+        <Header />
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <ContactMe />
+        <Footer />
+      </>}
     </>
   );
 }

@@ -1,0 +1,21 @@
+/* Ajusta el tamaño y estilo de los títulos */
+.projects-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+  
+  /* Agrega sombras a las tarjetas */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto de hover en las tarjetas */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Ajusta el espaciado entre botones */
+  .card .btn {
+    margin-top: 10px;
+  }
