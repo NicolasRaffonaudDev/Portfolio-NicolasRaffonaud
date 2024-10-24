@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import FadeInWrapper from '../FadeInWrapper/FadeInWrapper';
 import './Projects.css'
+import { ThemeContext } from '../../context/ThemeContext';
 
 const projects = [
     {
@@ -20,9 +22,11 @@ const projects = [
 ];
 
 const Projects = () => {
+  const { theme } = useContext(ThemeContext); // Usar el contexto para obtener el tema actual
+  console.log(theme)
   return (
     <>
-        <section id="projects" className="projects-section container py-5">
+        <section id="projects" className={`projects-section container py-5 ${theme}`}>
             <h2 className="display-4 text-center mb-5">My Projects</h2>
             
             <div className="row">
@@ -44,7 +48,7 @@ const Projects = () => {
                     </div>
                     </div>
                 </FadeInWrapper>
-                ))};
+                ))}
             </div>
         </section>
     </>

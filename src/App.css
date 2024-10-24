@@ -1,0 +1,16 @@
+/* styles.css */
+body.light {
+    background-color: #f0f0f0;
+    color: #000;
+}
+  
+body.dark {
+    background-color: #181818;
+    color: #fff;
+  }
+  
+button {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}

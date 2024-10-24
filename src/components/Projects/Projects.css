@@ -1,21 +1,55 @@
 /* Ajusta el tamaño y estilo de los títulos */
 .projects-section h2 {
-    font-size: 3rem;
-    margin-bottom: 50px;
-  }
-  
-  /* Agrega sombras a las tarjetas */
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Efecto de hover en las tarjetas */
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Ajusta el espaciado entre botones */
-  .card .btn {
-    margin-top: 10px;
-  }
+  font-size: 3rem;
+  margin-bottom: 50px;
+  transition: color 0.3s ease-in-out; /* Transición de color suave */
+}
+
+/* Estilos base para las tarjetas */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Efecto de hover en las tarjetas */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajusta el espaciado entre botones */
+.card .btn {
+  margin-top: 10px;
+}
+
+/* Transición de temas en los contenedores de proyectos */
+.projects-section {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Estilos para el tema claro */
+.projects-section.light {
+  background-color: #f0f0f0; /* Fondo claro */
+  color: #000; /* Texto oscuro */
+}
+
+.projects-section.light .card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Estilos para el tema oscuro */
+.projects-section.dark {
+  background-color: #181818; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+}
+
+.projects-section.dark .card {
+  background-color: #464646; /* Fondo gris oscuro para diferenciar del fondo */
+  color: #ffffff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Aumentar la sombra en el modo oscuro */
+}
+
+/* Efecto de hover en las tarjetas en modo oscuro */
+.projects-section.dark .card:hover {
+  box-shadow: 0 12px 25px rgba(117, 112, 112, 0.8); /* Sombra más marcada en hover */
+}

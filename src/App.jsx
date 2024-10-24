@@ -7,6 +7,8 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 import ContactMe from './components/ContactMe/ContactMe';
 import Skills from './components/Skills/Skills';
+import { ThemeProvider } from './context/ThemeContext';
+import ThemeButton from './components/ThemeButton/ThemeButton';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,15 +24,18 @@ function App() {
 
   return (
     <>
-      { loading ? <LoadingScreen /> : 
-      <>
-        <Header />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <ContactMe />
-        <Footer />
-      </>}
+      <ThemeProvider>
+        { loading ? <LoadingScreen /> : 
+        <>
+            <Header />
+            <AboutMe />
+            <Skills />
+            <Projects />
+            <ContactMe />
+            <Footer />
+            <ThemeButton />
+        </>}
+      </ThemeProvider>
     </>
   );
 }
