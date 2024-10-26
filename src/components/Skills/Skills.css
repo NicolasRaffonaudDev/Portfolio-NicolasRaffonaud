@@ -1,5 +1,7 @@
 .skills-section {
-  background-color: #f0f0f0;
+  background-color: rgb(241, 240, 240, 0.0);
+  position: relative;
+  z-index: 1;
 }
 
 .skill-card {
@@ -38,7 +40,7 @@
 
 /* Modo oscuro */
 .skills-section.dark {
-  background-color: #181818; /* Fondo oscuro */
+  background-color: rgb(24, 24, 24, 0.0); /* Fondo oscuro */
 }
 
 .skills-section.dark .skill-card {

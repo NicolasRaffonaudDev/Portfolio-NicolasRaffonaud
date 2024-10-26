@@ -28,7 +28,7 @@
 
 /* Estilos para el tema claro */
 .projects-section.light {
-  background-color: #f0f0f0; /* Fondo claro */
+  background-color: rgb(240, 240, 240, 0.0); /* Fondo claro */
   color: #000; /* Texto oscuro */
 }
 
@@ -39,7 +39,7 @@
 
 /* Estilos para el tema oscuro */
 .projects-section.dark {
-  background-color: #181818; /* Fondo oscuro */
+  background-color: rgb(24, 24, 24, 0); /* Fondo oscuro */
   color: #fff; /* Texto claro */
 }
 

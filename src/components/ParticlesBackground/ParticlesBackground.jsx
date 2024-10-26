@@ -22,7 +22,7 @@ const ParticlesBackground = () => {
                 distance: 150,
             },
             move: { enable: true, speed: 5, direction: "none", random: true, },
-            number: { value: 15 },
+            number: { value: 222 },
             random: false,
             straight: false,
             outMode: "bounce",
