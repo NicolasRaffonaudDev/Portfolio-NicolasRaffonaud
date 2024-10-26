@@ -17,31 +17,22 @@ button {
     cursor: pointer;
 }
 
-/* src/App.css */
-.particles-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Para que esté detrás del contenido principal */
-  }
-
   /* App.css */
 /* App.css o en un archivo CSS donde defines el estilo de ParticlesBackground */
 .particles-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10; /* Coloca el fondo más abajo en el stack */
-    pointer-events: none; /* Para que no interfiera con la interacción de otros elementos */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: -10; /* Asegura que esté detrás */
+  pointer-events: none; /* Para evitar interacción del usuario */
+}
 
   /* App.css */
 .app-container {
     position: relative;
     z-index: 1; /* Mantiene el contenido por encima de las partículas */
     background-color: transparent;
+    min-height: 100vh;
   }

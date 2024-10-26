@@ -26,8 +26,8 @@ function App() {
   return (
     <>
       <ThemeProvider>
-        <div className='particles-wrapper'>
-        <ParticlesBackground /> </div>
+        <div className='app-container'>
+        <ParticlesBackground />
         { loading ? <LoadingScreen /> : 
         <>
             <Header />
@@ -38,6 +38,7 @@ function App() {
             <Footer />
             <ThemeButton />
         </>}
+        </div>
       </ThemeProvider>
     </>
   );

@@ -1,5 +1,6 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
+import './ParticlesBackground.css'
 
 const ParticlesBackground = () => {
   const particlesInit = async (main) => {
@@ -8,43 +9,48 @@ const ParticlesBackground = () => {
 
   return (
     <Particles
-      init={particlesInit}
-      options={{
-        background: {
-          color: {
-            value: "transparent", // Cambia el color de fondo según tu tema
-          },
-        },
+    className="particles-wrapper"
+    init={particlesInit}
+    options={{
+        background: { color: { value: "transparent" }},
         particles: {
-          color: {
-            value: "#a0a0a0",
-          },
-          links: {
-            enable: true,
-            color: "#ffffff",
-            opacity: 0.5,
-            distance: 150,
-          },
-          move: {
-            enable: true,
-            speed: 1,
-          },
-          number: {
-            value: 80,
-          },
-          opacity: {
-            value: 0.7,
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            value: 3,
-            random: true,
-          },
+            color: { value: "random" },
+            links: {
+                enable: true,
+                color: "random",
+                opacity: 0.4,
+                distance: 150,
+            },
+            move: { enable: true, speed: 5, direction: "none", random: true, },
+            number: { value: 15 },
+            random: false,
+            straight: false,
+            outMode: "bounce",
+            attract: {
+              enable: true,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+            opacity: { value: 0.6, random: true, },
+            shape: { type: "square" },
+            size: { value: 22, random: true },
+            modes: {
+              repulse: {
+                distance: 100, // Distancia de interacción
+                duration: 0.4, // Duración del efecto
+                speed: 6, // Velocidad de repulsión
+              },
+            },
+            interactivity: {
+              events: {
+                onHover: {
+                  enable: true,
+                  mode: "repulse", // Efecto de repulsión en hover
+                },
+              },}
         },
-      }}
-    />
+    }}
+/>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import FadeInWrapper from '../FadeInWrapper/FadeInWrapper';
 import './Skills.css'; // Estilos para esta sección
 import { ThemeContext } from '../../context/ThemeContext'; // Importa el contexto del tema
