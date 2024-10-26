@@ -9,6 +9,7 @@ import ContactMe from './components/ContactMe/ContactMe';
 import Skills from './components/Skills/Skills';
 import { ThemeProvider } from './context/ThemeContext';
 import ThemeButton from './components/ThemeButton/ThemeButton';
+import ParticlesBackground from './components/ParticlesBackground/ParticlesBackground';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,8 @@ function App() {
   return (
     <>
       <ThemeProvider>
+        <div className='particles-wrapper'>
+        <ParticlesBackground /> </div>
         { loading ? <LoadingScreen /> : 
         <>
             <Header />
