@@ -32,7 +32,14 @@ const ParticlesBackground = () => {
               rotateY: 1200,
             },
             opacity: { value: 0.6, random: true, },
-            shape: { type: "square" },
+            shape: { type: "image",
+              options: {
+                  image: {
+                      src: "https://e7.pngegg.com/pngimages/183/565/png-clipart-draw-a-stickman-epic-2-stick-figure-computer-icons-stick-miscellaneous-angle.png", // Reemplaza con la ruta de tu imagen
+                      width: 20,
+                      height: 20
+                  }
+              } },
             size: { value: 22, random: true },
             modes: {
               repulse: {

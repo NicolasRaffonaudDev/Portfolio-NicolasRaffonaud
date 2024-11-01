@@ -1,25 +1,16 @@
-import FadeInWrapper from '../FadeInWrapper/FadeInWrapper'
-import './AboutMe.css'
+import FadeInWrapper from '../FadeInWrapper/FadeInWrapper';
+import PerfilImage from '../../assets/PerfilImage.jpeg';
+import './AboutMe.css';
 
 const AboutMe = () => {
     return (
-        <>
-            <section id="about" className="about-section container py-5">
-                <div className="row align-items-center">
-                    {/* Columna de Imagen con animación de izquierda a derecha */}
+        <section id="about" className="about-section container py-5">
+            <div className="row align-items-center">
+                
+                {/* Columna de Texto con animación de izquierda a derecha */}
+                <div className="col-md-6">
                     <FadeInWrapper animationClass="slide-in-left">
-                        <div className="col-md-6 mb-4 mb-md-0">
-                            <img
-                                src="your-profile-picture.jpg"
-                                alt="Your Profile"
-                                className="img-fluid rounded-circle"
-                            />
-                        </div>
-                    </FadeInWrapper>
-
-                    {/* Columna de Texto con animación de derecha a izquierda */}
-                    <FadeInWrapper animationClass="slide-in-right">
-                        <div className="col-md-6">
+                        <div>
                             <h2 className="display-4">About Me</h2>
                             <p className="lead">
                                 I'm a passionate Front-End Developer with a focus on creating modern and responsive web applications.
@@ -36,9 +27,20 @@ const AboutMe = () => {
                         </div>
                     </FadeInWrapper>
                 </div>
-            </section>
-        </>
-    )
-}
+                
+                {/* Columna de Imagen con animación de derecha a izquierda */}
+                <div className="col-md-6 text-center text-md-end">
+                    <FadeInWrapper animationClass="slide-in-right">
+                        <img
+                            src={PerfilImage}
+                            alt="Your Profile"
+                            className="img-fluid rounded-circle profile-img"
+                        />
+                    </FadeInWrapper>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 export default AboutMe;

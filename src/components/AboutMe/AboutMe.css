@@ -7,7 +7,7 @@
   
   /* Ajustes de la imagen */
   .about-section img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border: 5px solid #ddd;
   }
@@ -16,3 +16,4 @@
   .about-section .btn {
     margin-top: 20px;
   }
+
