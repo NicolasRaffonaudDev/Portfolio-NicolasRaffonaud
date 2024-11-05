@@ -5,18 +5,18 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 const projects = [
     {
-      title: 'E-commerce Website',
-      description: 'A fully functional e-commerce application built with React and Redux.',
+      title: 'E-commerce GuaridaHw',
+      description: 'A fully functional e-commerce application built with React.',
       image: 'ecommerce-screenshot.jpg',
       liveLink: 'https://your-ecommerce-project.com',
-      codeLink: 'https://github.com/yourusername/ecommerce-project'
+      codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw'
     },
     {
-      title: 'Portfolio Website',
-      description: 'My personal portfolio website to showcase my projects and skills.',
+      title: 'JM Gestion Comercial',
+      description: 'Aplicacion web orientada a la venta de bienes inmuebles.',
       image: 'portfolio-screenshot.jpg',
       liveLink: 'https://your-portfolio.com',
-      codeLink: 'https://github.com/yourusername/portfolio'
+      codeLink: 'https://github.com/NicolasRaffonaudDev/JMGestionComercial'
     },
     // Puedes añadir más proyectos aquí
 ];

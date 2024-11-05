@@ -2,13 +2,26 @@
 .projects-section h2 {
   font-size: 3rem;
   margin-bottom: 50px;
+  color: inherit;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   transition: color 0.3s ease-in-out; /* Transición de color suave */
 }
 
 /* Estilos base para las tarjetas */
 .card {
+  padding: 20px;
+  border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
 
 /* Efecto de hover en las tarjetas */
 .card:hover {
