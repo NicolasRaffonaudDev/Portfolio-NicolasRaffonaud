@@ -1,7 +1,7 @@
 .skills-section {
   background-color: rgb(241, 240, 240, 0.0);
   position: relative;
-  z-index: 1;
+  z-index: -1;
 }
 
 .skill-card {
