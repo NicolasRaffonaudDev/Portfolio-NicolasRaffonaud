@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
 import './ContactMe.css';
 
@@ -78,8 +79,12 @@ const ContactMe = () => {
 
                 <div className="text-center mt-5">
                     <p>Or connect with me on:</p>
-                    <a href="https://github.com/yourusername" className="btn btn-outline-dark mx-2" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://linkedin.com/in/yourusername" className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/NicolasRaffonaudDev" className="btn btn-outline-dark mx-2" target="_blank" rel="noopener noreferrer">
+                        <FaGithub style={{ marginRight: '8px' }} /> GitHub
+                    </a>
+                    <a href="https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106" className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer"> 
+                        <FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn
+                    </a>
                 </div>
             </FadeInWrapper>
         </section>

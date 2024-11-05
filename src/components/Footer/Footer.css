@@ -13,3 +13,30 @@
   .text-light {
     color: #f8f9fa !important;
   }
+
+  /* Efecto de hover en iconos */
+.footer-icon {
+  transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.footer-icon:hover {
+  color: #0077b5; /* Cambia el color a uno distintivo, ej: azul de LinkedIn */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Colores específicos para cada red social */
+.footer-icon.linkedin:hover {
+  color: #0077b5; /* Azul LinkedIn */
+}
+
+.footer-icon.instagram:hover {
+  color: #E1306C; /* Rosado Instagram */
+}
+
+.footer-icon.whatsapp:hover {
+  color: #25D366; /* Verde WhatsApp */
+}
+
+.footer-icon.gmail:hover {
+  color: #D44638; /* Rojo Gmail */
+}
