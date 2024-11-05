@@ -7,14 +7,14 @@ const projects = [
     {
       title: 'E-commerce GuaridaHw',
       description: 'A fully functional e-commerce application built with React.',
-      image: 'ecommerce-screenshot.jpg',
+      preview: '../../assets/Animation.gif',
       liveLink: 'https://your-ecommerce-project.com',
       codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw'
     },
     {
       title: 'JM Gestion Comercial',
       description: 'Aplicacion web orientada a la venta de bienes inmuebles.',
-      image: 'portfolio-screenshot.jpg',
+      preview: '../../assets/JmGestion.gif',
       liveLink: 'https://your-portfolio.com',
       codeLink: 'https://github.com/NicolasRaffonaudDev/JMGestionComercial'
     },
@@ -34,11 +34,11 @@ const Projects = () => {
                 <FadeInWrapper key={index} animationClass={index % 2 === 0 ? "slide-in-left" : "slide-in-right"}>
                     <div className="col-md-6 mb-4">
                     <div className="card shadow-sm">
-                        <img src={project.image} alt={project.title} className="card-img-top" />
+                        <img src={project.preview} alt={project.title} className="card-img-top" />
                         <div className="card-body">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
-                        <a href={project.liveLink} className="btn btn-primary mr-2" target="_blank" rel="noopener noreferrer">
+                        <a href={project.liveLink} className="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">
                             Live Demo
                         </a>
                         <a href={project.codeLink} className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
