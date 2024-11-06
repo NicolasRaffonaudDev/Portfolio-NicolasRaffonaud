@@ -1,4 +1,4 @@
-.particles-background {
+.particles-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -7,3 +7,4 @@
     z-index: -1; /* Cambiado a -1 */
     pointer-events: none; /* Evita que interfiera con los eventos de usuario */
 }
+

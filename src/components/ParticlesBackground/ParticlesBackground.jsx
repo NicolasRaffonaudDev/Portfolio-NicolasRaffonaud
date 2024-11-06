@@ -1,6 +1,7 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import './ParticlesBackground.css'
+import fuegos from '../../assets/fuegos-artificiales.png'
 
 const ParticlesBackground = () => {
   const particlesInit = async (main) => {
@@ -21,26 +22,26 @@ const ParticlesBackground = () => {
                 opacity: 0.4,
                 distance: 150,
             },
-            move: { enable: true, speed: 5, direction: "none", random: true, },
+            move: { enable: true, speed: 3, direction: "random", random: true, },
             number: { value: 222 },
-            random: false,
-            straight: false,
+            random: true,
+            straight: true,
             outMode: "bounce",
             attract: {
               enable: true,
               rotateX: 600,
               rotateY: 1200,
             },
-            opacity: { value: 0.6, random: true, },
+            opacity: { value: 5, random: true, },
             shape: { type: "image",
               options: {
                   image: {
-                      src: "https://e7.pngegg.com/pngimages/183/565/png-clipart-draw-a-stickman-epic-2-stick-figure-computer-icons-stick-miscellaneous-angle.png", // Reemplaza con la ruta de tu imagen
-                      width: 20,
-                      height: 20
+                      src: fuegos, // Reemplaza con la ruta de tu imagen
+                      width: 55,
+                      height: 55
                   }
               } },
-            size: { value: 22, random: true },
+            size: { value: 66, random: true },
             modes: {
               repulse: {
                 distance: 100, // Distancia de interacción
