@@ -10,55 +10,49 @@ const ParticlesBackground = () => {
 
   return (
     <Particles
-    className="particles-wrapper"
-    init={particlesInit}
-    options={{
-        background: { color: { value: "transparent" }},
+      className="particles-wrapper"
+      init={particlesInit}
+      options={{
+        background: { color: { value: "transparent" } },
         particles: {
-            color: { value: "random" },
-            links: {
-                enable: true,
-                color: "random",
-                opacity: 0.4,
-                distance: 150,
-            },
-            move: { enable: true, speed: 3, direction: "random", random: true, },
-            number: { value: 222 },
-            random: true,
-            straight: true,
-            outMode: "bounce",
-            attract: {
+          color: { value: "#000" },
+          links: {
               enable: true,
-              rotateX: 600,
-              rotateY: 1200,
+              color: "#2617fa",
+              opacity: 0.8,
+              distance: 100,
+          },
+          move: { enable: true, speed: 3, random: false, outMode: "bounce" },
+          number: { value: 99 },
+          opacity: { value: 0.8 },
+          shape: {
+            type: "image",
+            options: {
+              image: {
+                src: fuegos, // Utiliza la ruta de tu imagen local
+                width: 55,
+                height: 55
+              }
+            }
+          },
+          size: { value: { min: 33, max: 77 }, random: true }
+      },
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "grab", // Efecto de repulsión en hover
             },
-            opacity: { value: 5, random: true, },
-            shape: { type: "image",
-              options: {
-                  image: {
-                      src: fuegos, // Reemplaza con la ruta de tu imagen
-                      width: 55,
-                      height: 55
-                  }
-              } },
-            size: { value: 66, random: true },
-            modes: {
-              repulse: {
-                distance: 100, // Distancia de interacción
-                duration: 0.4, // Duración del efecto
-                speed: 6, // Velocidad de repulsión
-              },
+          },
+          modes: {
+            grab: {
+              distance: 155,
+              line_linked: { opacity: 0.8 }
             },
-            interactivity: {
-              events: {
-                onHover: {
-                  enable: true,
-                  mode: "repulse", // Efecto de repulsión en hover
-                },
-              },}
+          },
         },
-    }}
-/>
+      }}
+    />
   );
 };
 

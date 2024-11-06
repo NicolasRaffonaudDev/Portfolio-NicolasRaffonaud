@@ -29,7 +29,7 @@ const Skills = () => {
     <section id="skills" className={`skills-section py-5 ${theme === 'dark' ? 'dark' : ''}`}>
       <FadeInWrapper animationClass="fade-in">
         <div className="container">
-          <h2 className="text-center mb-5">My Skills</h2>
+          <h2 className="text-center display-4 mb-5">My Skills</h2>
           
           <div className="row text-center">
             {skillsData.map((skill, index) => (
