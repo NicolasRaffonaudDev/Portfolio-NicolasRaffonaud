@@ -17,10 +17,10 @@ const ParticlesBackground = () => {
         particles: {
           color: { value: "#4D4D4D" },
           links: {
-              enable: true,
-              color: "#555555",
-              opacity: 0.1,
-              distance: 100,
+            enable: true,
+            color: "#555555",
+            opacity: 0.1,
+            distance: 100,
           },
           move: { enable: true, speed: 1, random: true, outMode: "bounce" },
           number: { value: 44 },
@@ -36,7 +36,7 @@ const ParticlesBackground = () => {
             }
           },
           size: { value: { min: 14, max: 44 }, random: true }
-      },
+        },
         interactivity: {
           events: {
             onHover: {
@@ -47,7 +47,16 @@ const ParticlesBackground = () => {
           modes: {
             grab: {
               distance: 222,
-              line_linked: { opacity: 0.8 }
+              line_linked: {
+                opacity: 0.6, // Opacidad completa para líneas en hover
+                color: "#ff5722", // Cambia a un color de resaltado (puedes ajustar)
+                width: 2, // Grosor en el modo hover
+                shadow: {
+                  enable: true,
+                  color: "#ff5722",
+                  blur: 5 // Efecto de desenfoque para la sombra
+                }
+              }
             },
           },
         },
