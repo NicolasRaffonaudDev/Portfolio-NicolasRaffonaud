@@ -1,7 +1,7 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import './ParticlesBackground.css'
-import fuegos from '../../assets/fuegos-artificiales.png'
+import fuegos from '../../assets/geometryy-rem.png'
 
 const ParticlesBackground = () => {
   const particlesInit = async (main) => {
@@ -15,27 +15,27 @@ const ParticlesBackground = () => {
       options={{
         background: { color: { value: "transparent" } },
         particles: {
-          color: { value: "#000" },
+          color: { value: "#4D4D4D" },
           links: {
               enable: true,
-              color: "#2617fa",
-              opacity: 0.8,
+              color: "#555555",
+              opacity: 0.1,
               distance: 100,
           },
-          move: { enable: true, speed: 3, random: false, outMode: "bounce" },
-          number: { value: 99 },
-          opacity: { value: 0.8 },
+          move: { enable: true, speed: 1, random: true, outMode: "bounce" },
+          number: { value: 44 },
+          opacity: { value: 0.2 },
           shape: {
             type: "image",
             options: {
               image: {
                 src: fuegos, // Utiliza la ruta de tu imagen local
                 width: 55,
-                height: 55
+                height: 55,
               }
             }
           },
-          size: { value: { min: 33, max: 77 }, random: true }
+          size: { value: { min: 14, max: 44 }, random: true }
       },
         interactivity: {
           events: {
@@ -46,7 +46,7 @@ const ParticlesBackground = () => {
           },
           modes: {
             grab: {
-              distance: 155,
+              distance: 222,
               line_linked: { opacity: 0.8 }
             },
           },
