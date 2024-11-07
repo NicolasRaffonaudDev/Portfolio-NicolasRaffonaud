@@ -34,7 +34,7 @@ const Skills = () => {
           <div className="row text-center">
             {skillsData.map((skill, index) => (
               <div key={index} className="col-sm-4 col-md-3 mb-4">
-                <div className="skill-card" style={{ height: 190 }}>
+                <div className="skill-card" style={{ height: 222 }}>
                   <div className="skill-icon" style={{ '--icon-color': skill.icon.props.style.color }}>
                     {skill.icon}
                   </div>

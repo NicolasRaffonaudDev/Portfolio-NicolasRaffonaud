@@ -21,10 +21,10 @@ const Header = () => {
                   <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#about">About</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#projects">Projects</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#skills">Skills</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#projects">Projects</a>
                 </li>
                 <li className="nav-item">
                   <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#contact">Contact</a>
