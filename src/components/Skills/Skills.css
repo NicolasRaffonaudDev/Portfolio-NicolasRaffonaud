@@ -40,18 +40,23 @@
 
 /* Modo oscuro */
 .skills-section.dark {
-  background-color: rgb(24, 24, 24, 0.0); /* Fondo oscuro */
+  background-color: rgb(24, 24, 24, 0.0);
+  /* Fondo oscuro */
 }
 
 .skills-section.dark .skill-card {
-  background-color: #464646; /* Fondo más claro que el fondo principal */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombras más fuertes */
+  background-color: #464646;
+  /* Fondo más claro que el fondo principal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Sombras más fuertes */
 }
 
 .skills-section.dark .skill-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Aumentar la sombra en hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  /* Aumentar la sombra en hover */
 }
 
 .skills-section.dark .skill-description {
-  color: #fff; /* Cambiar color del texto descriptivo a un tono más claro en modo oscuro */
+  color: #fff;
+  /* Cambiar color del texto descriptivo a un tono más claro en modo oscuro */
 }

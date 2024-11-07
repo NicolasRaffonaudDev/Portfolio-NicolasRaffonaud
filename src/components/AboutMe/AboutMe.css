@@ -1,19 +1,18 @@
 /* Personaliza el tamaño y el estilo del título */
 .about-section h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* Ajustes de la imagen */
-  .about-section img {
-    max-width: 60%;
-    height: auto;
-    border: 5px solid #ddd;
-  }
-  
-  /* Espaciado del botón */
-  .about-section .btn {
-    margin-top: 20px;
-  }
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
+/* Ajustes de la imagen */
+.about-section img {
+  max-width: 60%;
+  height: auto;
+  border: 5px solid #ddd;
+}
+
+/* Espaciado del botón */
+.about-section .btn {
+  margin-top: 20px;
+}

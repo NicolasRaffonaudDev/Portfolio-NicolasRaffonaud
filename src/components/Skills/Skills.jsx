@@ -30,7 +30,6 @@ const Skills = () => {
       <FadeInWrapper animationClass="fade-in">
         <div className="container">
           <h2 className="text-center display-4 mb-5">My Skills</h2>
-          
           <div className="row text-center">
             {skillsData.map((skill, index) => (
               <div key={index} className="col-sm-4 col-md-3 mb-4">

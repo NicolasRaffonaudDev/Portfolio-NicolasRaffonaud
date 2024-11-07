@@ -5,12 +5,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, .display-4 {
+h1,
+h2,
+h3,
+.display-4 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700; /* Para h1 */
+  font-weight: 700;
+  /* Para h1 */
 }
 
-button, .btn {
+button,
+.btn {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
@@ -18,22 +23,22 @@ button, .btn {
 
 
 body.light {
-    background-color: #f0f0f0;
-    color: #000;
-}
-  
-body.dark {
-    background-color: #181818;
-    color: #fff;
-  }
-  
-button {
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
+  background-color: #f0f0f0;
+  color: #000;
 }
 
-  /* App.css */
+body.dark {
+  background-color: #181818;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* App.css */
 /* App.css o en un archivo CSS donde defines el estilo de ParticlesBackground */
 .particles-wrapper {
   position: fixed;
@@ -41,14 +46,17 @@ button {
   left: 0;
   width: 100vw;
   height: 100vw;
-  z-index: -10; /* Asegura que esté detrás */
-  pointer-events: none; /* Para evitar interacción del usuario */
+  z-index: -10;
+  /* Asegura que esté detrás */
+  pointer-events: none;
+  /* Para evitar interacción del usuario */
 }
 
-  /* App.css */
+/* App.css */
 .app-container {
-    position: relative;
-    z-index: 1; /* Mantiene el contenido por encima de las partículas */
-    background-color: transparent;
-    min-height: 100vh;
-  }
+  position: relative;
+  z-index: 1;
+  /* Mantiene el contenido por encima de las partículas */
+  background-color: transparent;
+  min-height: 100vh;
+}

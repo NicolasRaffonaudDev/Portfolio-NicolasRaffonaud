@@ -82,7 +82,7 @@ const ContactMe = () => {
                     <a href="https://github.com/NicolasRaffonaudDev" className="btn btn-outline-dark mx-2" target="_blank" rel="noopener noreferrer">
                         <FaGithub style={{ marginRight: '8px' }} /> GitHub
                     </a>
-                    <a href="https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106" className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer"> 
+                    <a href="https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106" className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn
                     </a>
                 </div>

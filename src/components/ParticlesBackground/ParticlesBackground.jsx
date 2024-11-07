@@ -23,7 +23,7 @@ const ParticlesBackground = () => {
             distance: 100,
           },
           move: { enable: true, speed: 1, random: true, outMode: "bounce" },
-          number: { value: 44 },
+          number: { value: 77 },
           opacity: { value: 0.2 },
           shape: {
             type: "image",
@@ -35,7 +35,7 @@ const ParticlesBackground = () => {
               }
             }
           },
-          size: { value: { min: 14, max: 44 }, random: true }
+          size: { value: { min: 22, max: 55 }, random: true }
         },
         interactivity: {
           events: {
@@ -46,7 +46,7 @@ const ParticlesBackground = () => {
           },
           modes: {
             grab: {
-              distance: 222,
+              distance: 555,
               line_linked: {
                 opacity: 0.6, // Opacidad completa para líneas en hover
                 color: "#ff5722", // Cambia a un color de resaltado (puedes ajustar)

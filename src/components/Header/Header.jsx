@@ -12,8 +12,7 @@ const Header = () => {
       >
         <div className="container text-center">
           <h1>Nicolas Gabriel Raffonaud</h1>
-          <p className="lead">Front-End Developer | Passionate about web design and development</p>
-          <p className="lead">Desarrollador Front-End | Passionate about web design and development</p>
+          <p className="lead">Desarrollador Front-End | Creacion de Apps web</p>
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid justify-content-center">
               <ul className="navbar-nav">

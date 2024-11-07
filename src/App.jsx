@@ -19,25 +19,25 @@ function App() {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000); // 3 segundos de carga
-    
+
     return () => clearTimeout(timer);
-    }, []);
+  }, []);
 
   return (
     <>
       <ThemeProvider>
         <div className='app-container'>
-        <ParticlesBackground />
-        { loading ? <LoadingScreen /> : 
-        <>
-            <Header />
-            <AboutMe />
-            <Skills />
-            <Projects />
-            <ContactMe />
-            <Footer />
-            <ThemeButton />
-        </>}
+          <ParticlesBackground />
+          {loading ? <LoadingScreen /> :
+            <>
+              <Header />
+              <AboutMe />
+              <Skills />
+              <Projects />
+              <ContactMe />
+              <Footer />
+              <ThemeButton />
+            </>}
         </div>
       </ThemeProvider>
     </>

@@ -4,7 +4,8 @@
   margin-bottom: 50px;
   color: inherit;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  transition: color 0.3s ease-in-out; /* Transición de color suave */
+  transition: color 0.3s ease-in-out;
+  /* Transición de color suave */
 }
 
 /* Estilos base para las tarjetas */
@@ -41,8 +42,10 @@
 
 /* Estilos para el tema claro */
 .projects-section.light {
-  background-color: rgb(240, 240, 240, 0.0); /* Fondo claro */
-  color: #000; /* Texto oscuro */
+  background-color: rgb(240, 240, 240, 0.0);
+  /* Fondo claro */
+  color: #000;
+  /* Texto oscuro */
 }
 
 .projects-section.light .card {
@@ -52,17 +55,22 @@
 
 /* Estilos para el tema oscuro */
 .projects-section.dark {
-  background-color: rgb(24, 24, 24, 0); /* Fondo oscuro */
-  color: #fff; /* Texto claro */
+  background-color: rgb(24, 24, 24, 0);
+  /* Fondo oscuro */
+  color: #fff;
+  /* Texto claro */
 }
 
 .projects-section.dark .card {
-  background-color: #464646; /* Fondo gris oscuro para diferenciar del fondo */
+  background-color: #464646;
+  /* Fondo gris oscuro para diferenciar del fondo */
   color: #ffffff;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Aumentar la sombra en el modo oscuro */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  /* Aumentar la sombra en el modo oscuro */
 }
 
 /* Efecto de hover en las tarjetas en modo oscuro */
 .projects-section.dark .card:hover {
-  box-shadow: 0 12px 25px rgba(117, 112, 112, 0.8); /* Sombra más marcada en hover */
+  box-shadow: 0 12px 25px rgba(117, 112, 112, 0.8);
+  /* Sombra más marcada en hover */
 }
