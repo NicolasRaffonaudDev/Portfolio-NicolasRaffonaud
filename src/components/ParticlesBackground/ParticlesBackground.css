@@ -5,7 +5,5 @@
     width: 100%;
     height: 100vh;
     z-index: -1;
-    /* Cambiado a -1 */
     pointer-events: none;
-    /* Evita que interfiera con los eventos de usuario */
 }

@@ -19,9 +19,9 @@ const ContactMe = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aquí puedes agregar lógica para enviar el formulario, como un servicio de correo
+        // FALTA LOGICA PARA ENVIAR FORMULARIO
         console.log('Form submitted:', formData);
-        // Reseteamos el formulario después de enviarlo
+        // RESET DE FORMULARIO
         setFormData({ name: '', email: '', message: '' });
     };
 

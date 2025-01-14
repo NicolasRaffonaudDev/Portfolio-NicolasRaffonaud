@@ -29,7 +29,7 @@ const ParticlesBackground = () => {
             type: "image",
             options: {
               image: {
-                src: fuegos, // Utiliza la ruta de tu imagen local
+                src: fuegos, // RUTA DE IMAGEN DINAMICA
                 width: 55,
                 height: 55,
               }
@@ -41,16 +41,16 @@ const ParticlesBackground = () => {
           events: {
             onHover: {
               enable: true,
-              mode: "grab", // Efecto de repulsión en hover
+              mode: "grab", // EFECTO DE HOVER
             },
           },
           modes: {
             grab: {
               distance: 555,
               line_linked: {
-                opacity: 0.6, // Opacidad completa para líneas en hover
-                color: "#ff5722", // Cambia a un color de resaltado (puedes ajustar)
-                width: 2, // Grosor en el modo hover
+                opacity: 0.6, // OPACIDAD DE LINEAS
+                color: "#ff5722", // COLOR DE LINEAS
+                width: 2, // GROSOR DE LINEAS
                 shadow: {
                   enable: true,
                   color: "#ff5722",

@@ -22,7 +22,7 @@
 
 /* ANIMACION SLIDE, MONTAJE DESDE LOS COSTADOS */
 
-/* Side-in from the left */
+/* DESDE LA IZQUIERDA */
 .slide-in-left {
     opacity: 0;
     transform: translateX(-100%);
@@ -41,7 +41,7 @@
     }
 }
 
-/* Side-in from the right */
+/* DESDE LA DERECHA */
 .slide-in-right {
     opacity: 0;
     transform: translateX(100%);
@@ -60,7 +60,7 @@
     }
 }
 
-/* Top to bottom */
+/* ARRIBA HACIA ABAJO */
 .slide-in-top {
     opacity: 0;
     transform: translateY(-100%);
@@ -79,7 +79,7 @@
     }
 }
 
-/* Bottom to top */
+/* ABAJO HACIA ARRIBA */
 .slide-in-bottom {
     opacity: 0;
     transform: translateY(100%);

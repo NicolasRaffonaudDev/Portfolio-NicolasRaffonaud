@@ -1,6 +1,3 @@
-/* styles.css */
-
-/* Posicionar el botón debajo de las secciones */
 .theme-toggle-button {
   position: fixed;
   bottom: 20px;
@@ -11,10 +8,8 @@
   outline: none;
   font-size: 2rem;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  /* Transición para el color */
 }
 
-/* Animación de cambio de tamaño al pasar el mouse */
 .theme-toggle-button:hover {
   transform: scale(1.2);
 }

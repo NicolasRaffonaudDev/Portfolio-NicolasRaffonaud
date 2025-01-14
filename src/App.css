@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
 
-/* styles.css */
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -11,7 +10,6 @@ h3,
 .display-4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  /* Para h1 */
 }
 
 button,
@@ -38,8 +36,6 @@ button {
   cursor: pointer;
 }
 
-/* App.css */
-/* App.css o en un archivo CSS donde defines el estilo de ParticlesBackground */
 .particles-wrapper {
   position: fixed;
   top: 0;
@@ -47,16 +43,12 @@ button {
   width: 100vw;
   height: 100vw;
   z-index: -10;
-  /* Asegura que esté detrás */
   pointer-events: none;
-  /* Para evitar interacción del usuario */
 }
 
-/* App.css */
 .app-container {
   position: relative;
   z-index: 1;
-  /* Mantiene el contenido por encima de las partículas */
   background-color: transparent;
   min-height: 100vh;
 }

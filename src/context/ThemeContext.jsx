@@ -1,13 +1,11 @@
-// ThemeContext.js
 import React, { createContext, useState, useEffect } from "react";
 
-// Crear el contexto
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
-  // Cambiar el tema al clicar el botón
+  // Cambiar el tema
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };

@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import FadeInWrapper from '../FadeInWrapper/FadeInWrapper';
-import './Skills.css'; // Estilos para esta sección
-import { ThemeContext } from '../../context/ThemeContext'; // Importa el contexto del tema
-
+import { ThemeContext } from '../../context/ThemeContext';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGit, FaGithub, FaSass } from 'react-icons/fa';
-import { SiFirebase, SiVite, SiVercel, SiWebpack, SiTailwindcss } from 'react-icons/si';
+import { SiFirebase, SiVite, SiVercel, SiWebpack, SiTailwindcss, SiNetlify } from 'react-icons/si';
+import FadeInWrapper from '../FadeInWrapper/FadeInWrapper';
+import './Skills.css';
+
 
 const skillsData = [
   { name: "HTML5", icon: <FaHtml5 style={{ color: "#e34c26" }} />, description: "Markup language for the web." },
@@ -19,7 +19,8 @@ const skillsData = [
   { name: "Vite", icon: <SiVite style={{ color: "#646cff" }} />, description: "Next-generation frontend tool." },
   { name: "Vercel", icon: <SiVercel style={{ color: "#000" }} />, description: "Platform for frontend frameworks and static sites." },
   { name: "Webpack", icon: <SiWebpack style={{ color: "#8ed6fb" }} />, description: "Module bundler for JavaScript applications." },
-  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Utility-first CSS framework for building custom designs." }
+  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Utility-first CSS framework for building custom designs." },
+  { name: "Netlify", icon: <SiNetlify style={{ color: "#00c7b7" }} />, description: "Platform for deploying and hosting web projects." }
 ];
 
 const Skills = () => {

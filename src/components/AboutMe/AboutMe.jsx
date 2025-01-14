@@ -6,8 +6,6 @@ const AboutMe = () => {
     return (
         <section id="about" className="about-section container py-5">
             <div className="row align-items-center">
-
-                {/* Columna de Texto con animación de izquierda a derecha */}
                 <div className="col-md-6">
                     <FadeInWrapper animationClass="slide-in-left">
                         <div>
@@ -20,15 +18,13 @@ const AboutMe = () => {
                                 In my spare time, I enjoy learning new technologies and contributing to open-source projects.
                                 I'm always looking for new challenges and opportunities to grow.
                             </p>
-                            {/* Botón de Contacto */}
+                            
                             <a href="#contact" className="btn btn-primary">
                                 Contact Me
                             </a>
                         </div>
                     </FadeInWrapper>
                 </div>
-
-                {/* Columna de Imagen con animación de derecha a izquierda */}
                 <div className="col-md-6 text-center text-md-end">
                     <FadeInWrapper animationClass="slide-in-right">
                         <img
