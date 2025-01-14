@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <>
       <section id="projects" className={`projects-section container py-5 ${theme}`}>
-        <h2 className="display-4 text-center mb-5">My Projects</h2>
+        <h2 className="display-4 text-center mb-5">Mis Proyectos</h2>
 
         <div className="row">
           {projects.map((project, index) => (
@@ -52,16 +52,16 @@ const Projects = () => {
                     <a href={project.liveLink} className="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">
                       {project.livePlatform === 'netlify' ? (
                         <>
-                          <SiNetlify style={{ marginRight: '5px' }} /> Netlify Demo
+                          <SiNetlify style={{ marginRight: '5px' }} /> Netlify
                         </>
                       ) : (
                         <>
-                          <SiVercel style={{ marginRight: '5px' }} /> Vercel Demo
+                          <SiVercel style={{ marginRight: '5px' }} /> Vercel
                         </>
                       )}
                     </a>
                     <a href={project.codeLink} className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
-                      <FaGithub style={{ marginRight: '5px' }} /> View Code
+                      <FaGithub style={{ marginRight: '5px' }} /> Ver Código.
                     </a>
                   </div>
                 </div>

@@ -7,20 +7,20 @@ import './Skills.css';
 
 
 const skillsData = [
-  { name: "HTML5", icon: <FaHtml5 style={{ color: "#e34c26" }} />, description: "Markup language for the web." },
-  { name: "CSS3", icon: <FaCss3Alt style={{ color: "#2965f1" }} />, description: "Styling for web pages." },
-  { name: "JavaScript", icon: <FaJs style={{ color: "#f7df1e" }} />, description: "Programming language for dynamic web content." },
-  { name: "React", icon: <FaReact style={{ color: "#61dafb" }} />, description: "JavaScript library for building user interfaces." },
-  { name: "Bootstrap", icon: <FaBootstrap style={{ color: "#563d7c" }} />, description: "CSS framework for responsive web design." },
-  { name: "Git", icon: <FaGit style={{ color: "#f05033" }} />, description: "Version control system." },
-  { name: "GitHub", icon: <FaGithub style={{ color: "#333" }} />, description: "Platform for version control and collaboration." },
-  { name: "Sass/SCSS", icon: <FaSass style={{ color: "#cc6699" }} />, description: "CSS pre-processor for cleaner styles." },
-  { name: "Firebase", icon: <SiFirebase style={{ color: "#ffcb2b" }} />, description: "Backend-as-a-Service for web and mobile apps." },
-  { name: "Vite", icon: <SiVite style={{ color: "#646cff" }} />, description: "Next-generation frontend tool." },
-  { name: "Vercel", icon: <SiVercel style={{ color: "#000" }} />, description: "Platform for frontend frameworks and static sites." },
-  { name: "Webpack", icon: <SiWebpack style={{ color: "#8ed6fb" }} />, description: "Module bundler for JavaScript applications." },
-  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Utility-first CSS framework for building custom designs." },
-  { name: "Netlify", icon: <SiNetlify style={{ color: "#00c7b7" }} />, description: "Platform for deploying and hosting web projects." }
+  { name: "HTML5", icon: <FaHtml5 style={{ color: "#e34c26" }} />, description: "Lenguaje de marcado para la web." },
+  { name: "CSS3", icon: <FaCss3Alt style={{ color: "#2965f1" }} />, description: "Estilos para páginas web." },
+  { name: "JavaScript", icon: <FaJs style={{ color: "#f7df1e" }} />, description: "Lenguaje de programación para contenido dinámico en la web." },
+  { name: "React", icon: <FaReact style={{ color: "#61dafb" }} />, description: "Biblioteca de JavaScript para construir interfaces de usuario." },
+  { name: "Bootstrap", icon: <FaBootstrap style={{ color: "#563d7c" }} />, description: "Framework de CSS para diseño web responsivo." },
+  { name: "Git", icon: <FaGit style={{ color: "#f05033" }} />, description: "Sistema de control de versiones." },
+  { name: "GitHub", icon: <FaGithub style={{ color: "#333" }} />, description: "Plataforma para control de versiones y colaboración." },
+  { name: "Sass/SCSS", icon: <FaSass style={{ color: "#cc6699" }} />, description: "Preprocesador de CSS para estilos más limpios." },
+  { name: "Firebase", icon: <SiFirebase style={{ color: "#ffcb2b" }} />, description: "Backend como servicio para aplicaciones web y móviles." },
+  { name: "Vite", icon: <SiVite style={{ color: "#646cff" }} />, description: "Herramienta de desarrollo frontend de última generación." },
+  { name: "Vercel", icon: <SiVercel style={{ color: "#000" }} />, description: "Plataforma para frameworks frontend y sitios estáticos." },
+  { name: "Webpack", icon: <SiWebpack style={{ color: "#8ed6fb" }} />, description: "Empaquetador de módulos para aplicaciones JavaScript." },
+  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Framework de CSS basado en utilidades para diseños personalizados." },
+  { name: "Netlify", icon: <SiNetlify style={{ color: "#00c7b7" }} />, description: "Plataforma para desplegar y alojar proyectos web." }
 ];
 
 const Skills = () => {
@@ -30,7 +30,7 @@ const Skills = () => {
     <section id="skills" className={`skills-section py-5 ${theme === 'dark' ? 'dark' : ''}`}>
       <FadeInWrapper animationClass="fade-in">
         <div className="container">
-          <h2 className="text-center display-4 mb-5">My Skills</h2>
+          <h2 className="text-center display-4 mb-5">Tecnologías</h2>
           <div className="row text-center">
             {skillsData.map((skill, index) => (
               <div key={index} className="col-sm-4 col-md-3 mb-4">

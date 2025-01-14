@@ -28,13 +28,13 @@ const ContactMe = () => {
     return (
         <section id="contact" className="contact-section container py-5">
             <FadeInWrapper animationClass="fade-in">
-                <h2 className="display-4 text-center mb-5">Get in Touch</h2>
+                <h2 className="display-4 text-center mb-5">Contacto</h2>
 
                 <div className="row justify-content-center">
                     <div className="col-md-8">
                         <form onSubmit={handleSubmit} className="contact-form">
                             <div className="form-group">
-                                <label htmlFor="name">Name</label>
+                                <label htmlFor="name">Nombre</label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -60,7 +60,7 @@ const ContactMe = () => {
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="message">Message</label>
+                                <label htmlFor="message">Mensaje</label>
                                 <textarea
                                     className="form-control"
                                     id="message"
@@ -72,13 +72,13 @@ const ContactMe = () => {
                                 />
                             </div>
 
-                            <button type="submit" className="btn btn-primary btn-block">Send Message</button>
+                            <button type="submit" className="btn btn-primary btn-block">Enviar Mensaje</button>
                         </form>
                     </div>
                 </div>
 
                 <div className="text-center mt-5">
-                    <p>Or connect with me on:</p>
+                    <p>Conecta conmigo en:</p>
                     <a href="https://github.com/NicolasRaffonaudDev" className="btn btn-outline-dark mx-2" target="_blank" rel="noopener noreferrer">
                         <FaGithub style={{ marginRight: '8px' }} /> GitHub
                     </a>

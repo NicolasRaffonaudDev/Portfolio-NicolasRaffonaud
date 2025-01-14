@@ -17,16 +17,16 @@ const Header = () => {
             <div className="container-fluid justify-content-center">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#about">About</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#about">Sobre Mí</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#skills">Skills</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#skills">Tecnologías</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#projects">Projects</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#projects">Proyectos</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#contact">Contact</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#contact">Contacto</a>
                 </li>
               </ul>
             </div>

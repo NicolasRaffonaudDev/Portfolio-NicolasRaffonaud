@@ -9,18 +9,18 @@ const AboutMe = () => {
                 <div className="col-md-6">
                     <FadeInWrapper animationClass="slide-in-left">
                         <div>
-                            <h2 className="display-4">About Me</h2>
+                            <h2 className="display-4">Sobre Mí</h2>
                             <p className="lead">
-                                I'm a passionate Front-End Developer with a focus on creating modern and responsive web applications.
-                                I love solving problems and working with technologies like HTML, CSS, JavaScript, and React.
+                                Soy un desarrollador Front-End enfocado en la creación de aplicaciones web modernas y responsivas.
+                                Me encanta resolver problemas y trabajar con tecnologías como HTML, CSS, JavaScript y React, entre otras.
                             </p>
                             <p>
-                                In my spare time, I enjoy learning new technologies and contributing to open-source projects.
-                                I'm always looking for new challenges and opportunities to grow.
+                                En mi tiempo libre, disfruto aprendiendo nuevas tecnologías.
+                                Siempre estoy buscando nuevos desafíos y oportunidades para crecer.
                             </p>
-                            
+
                             <a href="#contact" className="btn btn-primary">
-                                Contact Me
+                                Contáctame
                             </a>
                         </div>
                     </FadeInWrapper>
