@@ -20,15 +20,15 @@ const projects = [
     preview: '../../assets/JmGestion.gif',
     liveLink: 'https://your-portfolio.com',
     codeLink: 'https://github.com/NicolasRaffonaudDev/JMGestionComercial',
-    livePlatform: 'netlify',
+    livePlatform: 'vercel',
   },
   {
     title: 'Portfolio Profesional',
     description: 'Portafolio profesional desarrollado para mostrar proyectos y habilidades en desarrollo frontend. Implementado en React con Vite para optimizar el rendimiento, con un enfoque en diseño atractivo y responsivo usando Tailwind CSS. La interactividad se mejora con animaciones personalizadas creadas con Framer Motion, mientras que `react-tsparticles` se usa para efectos de fondo. Los enlaces a cada proyecto incluyen previsualizaciones con GIFs y video, y se despliegan en Firebase y Vercel. Este portafolio destaca habilidades en desarrollo modular y animaciones avanzadas.',
     preview: '../../assets/PortfolioPreview.gif', // PREVISUALIZACION
-    liveLink: 'https://your-portfolio-link.com',
+    liveLink: 'https://nicolasraffonaud-portfolio.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/Portfolio-NicolasRaffonaud',
-    livePlatform: 'vercel',
+    livePlatform: 'netlify',
   }
 ];
 
