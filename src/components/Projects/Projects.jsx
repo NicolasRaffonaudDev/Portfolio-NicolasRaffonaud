@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <>
       <section id="projects" className={`projects-section container py-5 ${theme}`}>
-        <h2 className="display-4 text-center mb-5">Mis Proyectos</h2>
+        <h2 className="display-4 text-center mb-5">Proyectos</h2>
 
         <div className="row">
           {projects.map((project, index) => (

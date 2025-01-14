@@ -15,12 +15,12 @@ const AboutMe = () => {
                                 Me encanta resolver problemas y trabajar con tecnologías como HTML, CSS, JavaScript y React, entre otras.
                             </p>
                             <p>
-                                En mi tiempo libre, disfruto aprendiendo nuevas tecnologías.
+                                En mi tiempo libre, disfruto aprendiendo sobre técnicas de programación.
                                 Siempre estoy buscando nuevos desafíos y oportunidades para crecer.
                             </p>
 
                             <a href="#contact" className="btn btn-primary">
-                                Contáctame
+                                Contactame
                             </a>
                         </div>
                     </FadeInWrapper>

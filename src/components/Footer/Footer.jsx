@@ -12,12 +12,12 @@ const Footer = () => {
         <div className="container">
           <div className="row justify-content-between text-center">
             <div className="col-md-6">
-              <h5>Mi Portafolio</h5>
-              <p>Desarrollado con pasión por el desarrollo web.</p>
+              <h5>Nicolás Gabriel Raffonaud</h5>
+              <p>Desarrollado con enfoque de aprendizaje.</p>
             </div>
 
             <div className="col-md-6">
-              <h5>Contáctame en:</h5>
+              <h5>Contactame en:</h5>
               <div>
                 <a
                   href="https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106"
