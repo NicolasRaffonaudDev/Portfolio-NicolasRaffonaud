@@ -14,14 +14,14 @@ const projects = [
     codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw',
     livePlatform: 'netlify',
   },
-  {
+  /* {
     title: 'JM Gestion Comercial',
     description: 'Aplicación web para exponer y promocionar la venta de lotes en bienes raíces, con enfoque en usabilidad y diseño atractivo. Desarrollada en React y utilizando Vite para un rendimiento ágil. Los estilos están implementados con Tailwind CSS, brindando flexibilidad en el diseño responsivo. Framer Motion añade efectos visuales a las transiciones, mejorando la experiencia del usuario.',
     preview: '../../assets/JmGestion.gif',
     liveLink: 'https://your-portfolio.com',
     codeLink: 'https://github.com/NicolasRaffonaudDev/JMGestionComercial',
     livePlatform: 'vercel',
-  },
+  }, */
   {
     title: 'Portfolio Profesional',
     description: 'Portafolio profesional desarrollado para mostrar proyectos y habilidades en desarrollo frontend. Implementado en React con Vite para optimizar el rendimiento, con un enfoque en diseño atractivo y responsivo usando Tailwind CSS. La interactividad se mejora con animaciones personalizadas creadas con Framer Motion, mientras que `react-tsparticles` se usa para efectos de fondo. Los enlaces a cada proyecto incluyen previsualizaciones con GIFs y video, y se despliegan en Firebase y Vercel. Este portafolio destaca habilidades en desarrollo modular y animaciones avanzadas.',

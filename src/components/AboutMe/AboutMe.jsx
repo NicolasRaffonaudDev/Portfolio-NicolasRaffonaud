@@ -16,7 +16,7 @@ const AboutMe = () => {
                             </p>
                             <p>
                                 En mi tiempo libre, disfruto aprendiendo sobre técnicas de programación.
-                                Siempre estoy buscando nuevos desafíos y oportunidades para crecer.
+                                En este momento estoy buscando nuevos desafíos y oportunidades para crecer.
                             </p>
 
                             <a href="#contact" className="btn btn-primary">

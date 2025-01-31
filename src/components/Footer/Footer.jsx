@@ -19,14 +19,14 @@ const Footer = () => {
             <div className="col-md-6">
               <h5>Contactame en:</h5>
               <div>
-                <a
+                {/* <a
                   href="https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106"
                   className="footer-icon linkedin me-3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin size={30} />
-                </a>
+                </a> */}
                 <a
                   href="https://instagram.com/tu-usuario"
                   className="footer-icon instagram me-3"
