@@ -7,20 +7,20 @@ import './Skills.css';
 
 
 const skillsData = [
-  { name: "HTML5", icon: <FaHtml5 style={{ color: "#e34c26" }} />, description: "Lenguaje de marcado para la web." },
-  { name: "CSS3", icon: <FaCss3Alt style={{ color: "#2965f1" }} />, description: "Estilos para páginas web." },
-  { name: "JavaScript", icon: <FaJs style={{ color: "#f7df1e" }} />, description: "Lenguaje de programación para contenido dinámico en la web." },
-  { name: "React", icon: <FaReact style={{ color: "#61dafb" }} />, description: "Biblioteca de JavaScript para construir interfaces de usuario." },
-  { name: "Bootstrap", icon: <FaBootstrap style={{ color: "#563d7c" }} />, description: "Framework de CSS para diseño web responsivo." },
-  { name: "Git", icon: <FaGit style={{ color: "#f05033" }} />, description: "Sistema de control de versiones." },
-  { name: "GitHub", icon: <FaGithub style={{ color: "#333" }} />, description: "Plataforma para control de versiones y colaboración." },
-  { name: "Sass/SCSS", icon: <FaSass style={{ color: "#cc6699" }} />, description: "Preprocesador de CSS para estilos más limpios." },
-  { name: "Firebase", icon: <SiFirebase style={{ color: "#ffcb2b" }} />, description: "Backend como servicio para aplicaciones web y móviles." },
-  { name: "Vite", icon: <SiVite style={{ color: "#646cff" }} />, description: "Herramienta de desarrollo frontend de última generación." },
-  { name: "Vercel", icon: <SiVercel style={{ color: "#000" }} />, description: "Plataforma para frameworks frontend y sitios estáticos." },
-  { name: "Webpack", icon: <SiWebpack style={{ color: "#8ed6fb" }} />, description: "Empaquetador de módulos para aplicaciones JavaScript." },
-  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Framework de CSS basado en utilidades para diseños personalizados." },
-  { name: "Netlify", icon: <SiNetlify style={{ color: "#00c7b7" }} />, description: "Plataforma para desplegar y alojar proyectos web." }
+  { name: "HTML5", icon: <FaHtml5 style={{ color: "#e34c26" }} />, description: "Maquetación semántica avanzada en proyectos como GuaridaHW, optimizando SEO y accesibilidad." },
+  { name: "CSS3", icon: <FaCss3Alt style={{ color: "#2965f1" }} />, description: "Creación de sistemas de diseño responsivo con Grid/Flexbox. Animaciones complejas y optimización de rendimiento usando técnicas de renderizado GPU." },
+  { name: "JavaScript", icon: <FaJs style={{ color: "#f7df1e" }} />, description: "Desarrollo de lógica compleja en e-commerce: carrito dinámico, validación de formularios e integración con APIs. Dominio de ES6+, patrones de diseño y Web APIs." },
+  { name: "React", icon: <FaReact style={{ color: "#61dafb" }} />, description: "Arquitectura de componentes reutilizables en GuaridaHW. Manejo de estado con Context API + custom hooks. Optimización con memoización y lazy loading." },
+  { name: "Bootstrap", icon: <FaBootstrap style={{ color: "#563d7c" }} />, description: "Prototipado rápido de interfaces. Personalización avanzada mediante Sass y override de utilidades. Integración con Vite en 5+ proyectos." },
+  { name: "Git", icon: <FaGit style={{ color: "#f05033" }} />, description: "Flujo de trabajo profesional con Git Flow. Resolución de conflictos complejos y uso estratégico de rebase vs merge en proyectos." },
+  { name: "GitHub", icon: <FaGithub style={{ color: "#333" }} />, description: "Gestión de proyectos con Issues y Projects. CI/CD con GitHub Actions. Colaboración en equipo mediante PRs con revisión de código estructurada." },
+  { name: "Sass/SCSS", icon: <FaSass style={{ color: "#cc6699" }} />, description: "Sistemas de theming escalables. Mixins avanzados para responsive design. Arquitectura 7-1 en proyectos de más de 10k líneas de CSS." },
+  { name: "Firebase", icon: <SiFirebase style={{ color: "#ffcb2b" }} />, description: "Backend completo para GuaridaHW: Auth, Firestore y Cloud Functions. Implementación de reglas de seguridad y optimización de costos." },
+  { name: "Vite", icon: <SiVite style={{ color: "#646cff" }} />, description: "Configuración avanzada de entornos (dev/prod). Optimización de builds con análisis de bundle. Plugins personalizados para assets estáticos." },
+  { name: "Vercel", icon: <SiVercel style={{ color: "#000" }} />, description: "Despliegue continuo con previews para cada PR. Configuración de Serverless Functions y edge caching para máxima performance." },
+  { name: "Webpack", icon: <SiWebpack style={{ color: "#8ed6fb" }} />, description: "Configuración desde cero para legacy projects. Code splitting estratégico y optimización de assets con loaders personalizados." },
+  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Diseño utility-first con configuración personalizada. Integración con PostCSS y creación de componentes con @apply. JIT mode en producción." },
+  { name: "Netlify", icon: <SiNetlify style={{ color: "#00c7b7" }} />, description: "Despliegue de proyectos fullstack con funciones serverless. Configuración de redirects y headers de seguridad. A/B testing implementado." }
 ];
 
 const Skills = () => {

@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'E-commerce GuaridaHw',
     description: 'Aplicación de comercio electrónico enfocada en la venta de componentes de PC, desarrollada con una arquitectura de componentes en React y optimizada con Vite para un rápido desempeño. Firebase se utiliza para gestionar la base de datos y la autenticación, mientras que Bootstrap y CSS complementan el diseño responsivo. La app incluye funcionalidades de búsqueda, filtrado de productos y un carrito de compras dinámico.',
-    preview: '../../assets/Animation.gif',
+    preview: '/assets/projects/guaridahw2.gif',
     liveLink: 'https://guaridahw.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw',
     livePlatform: 'netlify',
@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'Portfolio Profesional',
     description: 'Portafolio profesional desarrollado para mostrar proyectos y habilidades en desarrollo frontend. Implementado en React con Vite para optimizar el rendimiento, con un enfoque en diseño atractivo y responsivo usando Tailwind CSS. La interactividad se mejora con animaciones personalizadas creadas con Framer Motion, mientras que `react-tsparticles` se usa para efectos de fondo. Los enlaces a cada proyecto incluyen previsualizaciones con GIFs y video, y se despliegan en Firebase y Vercel. Este portafolio destaca habilidades en desarrollo modular y animaciones avanzadas.',
-    preview: '../../assets/PortfolioPreview.gif', // PREVISUALIZACION
+    preview: '/assets/projects/guaridahw-resi.gif',
     liveLink: 'https://nicolasraffonaud-portfolio.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/Portfolio-NicolasRaffonaud',
     livePlatform: 'netlify',
