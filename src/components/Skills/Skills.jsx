@@ -14,13 +14,13 @@ const skillsData = [
   { name: "Bootstrap", icon: <FaBootstrap style={{ color: "#563d7c" }} />, description: "Prototipado rápido de interfaces. Personalización avanzada mediante Sass y override de utilidades. Integración con Vite en 5+ proyectos." },
   { name: "Git", icon: <FaGit style={{ color: "#f05033" }} />, description: "Flujo de trabajo profesional con Git Flow. Resolución de conflictos complejos y uso estratégico de rebase vs merge en proyectos." },
   { name: "GitHub", icon: <FaGithub style={{ color: "#333" }} />, description: "Gestión de proyectos con Issues y Projects. CI/CD con GitHub Actions. Colaboración en equipo mediante PRs con revisión de código estructurada." },
-  { name: "Sass/SCSS", icon: <FaSass style={{ color: "#cc6699" }} />, description: "Sistemas de theming escalables. Mixins avanzados para responsive design. Arquitectura 7-1 en proyectos de más de 10k líneas de CSS." },
+  { name: "Sass/SCSS", icon: <FaSass style={{ color: "#cc6699" }} />, description: "Sistemas de theming escalables. Mixins avanzados para responsive design." },
   { name: "Firebase", icon: <SiFirebase style={{ color: "#ffcb2b" }} />, description: "Backend completo para GuaridaHW: Auth, Firestore y Cloud Functions. Implementación de reglas de seguridad y optimización de costos." },
   { name: "Vite", icon: <SiVite style={{ color: "#646cff" }} />, description: "Configuración avanzada de entornos (dev/prod). Optimización de builds con análisis de bundle. Plugins personalizados para assets estáticos." },
   { name: "Vercel", icon: <SiVercel style={{ color: "#000" }} />, description: "Despliegue continuo con previews para cada PR. Configuración de Serverless Functions y edge caching para máxima performance." },
   { name: "Webpack", icon: <SiWebpack style={{ color: "#8ed6fb" }} />, description: "Configuración desde cero para legacy projects. Code splitting estratégico y optimización de assets con loaders personalizados." },
-  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Diseño utility-first con configuración personalizada. Integración con PostCSS y creación de componentes con @apply. JIT mode en producción." },
-  { name: "Netlify", icon: <SiNetlify style={{ color: "#00c7b7" }} />, description: "Despliegue de proyectos fullstack con funciones serverless. Configuración de redirects y headers de seguridad. A/B testing implementado." }
+  { name: "TailwindCSS", icon: <SiTailwindcss style={{ color: "#38bdf8" }} />, description: "Diseño utility-first con configuración personalizada. Integración con PostCSS y creación de componentes con @apply." },
+  { name: "Netlify", icon: <SiNetlify style={{ color: "#00c7b7" }} />, description: "Despliegue de proyectos fullstack con funciones serverless. A/B testing implementado." }
 ];
 
 const Skills = () => {
