@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { ThemeContext } from "../../context/ThemeContext";
 import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
 import './ContactMe.css';
 
 const ContactMe = () => {
+    const { theme } = useContext(ThemeContext);
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',

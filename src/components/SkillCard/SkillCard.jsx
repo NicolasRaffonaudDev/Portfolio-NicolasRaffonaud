@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types";
 
 const SkillCard = ({ name, icon, color, description }) => (
-    <div className="skill-card">
+    <div className="skill-card h-100">
         <div className="skill-icon" style={{ '--icon-color': color }}>
             {React.cloneElement(icon, { style: { color } })}
         </div>

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
 import { ThemeContext } from '../../context/ThemeContext';
-import { FaLinkedin, FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import {  FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,16 +17,8 @@ const Footer = () => {
             </div>
 
             <div className="col-md-6">
-              <h5>Contactame en:</h5>
+              <h5>Redes Sociales:</h5>
               <div>
-                {/* <a
-                  href="https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106"
-                  className="footer-icon linkedin me-3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin size={30} />
-                </a> */}
                 <a
                   href="https://instagram.com/tu-usuario"
                   className="footer-icon instagram me-3"
@@ -55,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
