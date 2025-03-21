@@ -14,13 +14,10 @@
   transform: scale(1.2);
 }
 
-/* Animación de los íconos */
 .icon {
   transition: transform 0.5s ease-in-out, color 0.3s ease-in-out;
-  /* Transición de color */
 }
 
-/* Animación de rotación */
 .theme-toggle-button .icon {
   transform: rotate(0deg);
 }
@@ -29,14 +26,10 @@
   transform: rotate(180deg);
 }
 
-/* Colores del tema claro */
 body.light .theme-toggle-button {
   color: #000;
-  /* Icono y botón en tema claro */
 }
 
-/* Colores del tema oscuro */
 body.dark .theme-toggle-button {
   color: #fff;
-  /* Icono y botón en tema oscuro */
 }

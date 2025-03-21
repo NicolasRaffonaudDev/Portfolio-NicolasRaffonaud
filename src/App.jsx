@@ -18,7 +18,7 @@ function App() {
     
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 3 segundos de carga
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

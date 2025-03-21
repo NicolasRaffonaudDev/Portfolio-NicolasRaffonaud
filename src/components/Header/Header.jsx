@@ -1,6 +1,7 @@
 import { useContext } from 'react';
-import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
 import { ThemeContext } from '../../context/ThemeContext';
+import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
+import "./Header.css"
 
 const Header = () => {
   const { theme } = useContext(ThemeContext);

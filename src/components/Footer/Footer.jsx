@@ -1,7 +1,8 @@
 import { useContext } from 'react';
-import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
 import { ThemeContext } from '../../context/ThemeContext';
 import {  FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
+import "./Footer.css"
 
 const Footer = () => {
   const { theme } = useContext(ThemeContext);
