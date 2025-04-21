@@ -11,7 +11,7 @@ const AboutMe = () => {
                         <div>
                             <h2 className="display-4">Sobre Mí</h2>
                             <p className="lead">
-                                Soy un desarrollador Front-End enfocado en la creación de aplicaciones web modernas y responsivas.
+                                Soy un programador enfocado en la creación de aplicaciones web modernas y responsivas.
                                 Me encanta resolver problemas y trabajar con tecnologías como HTML, CSS, JavaScript y React, entre otras.
                             </p>
                             <p>

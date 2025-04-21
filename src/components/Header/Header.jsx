@@ -13,7 +13,7 @@ const Header = () => {
       >
         <div className="container text-center">
           <h1>Nicolas Gabriel Raffonaud</h1>
-          <p className="lead">Desarrollador Front-End | Creador de Apps web.</p>
+          <p className="lead">Programador Front-End | Creador de Apps web.</p>
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid justify-content-center">
               <ul className="navbar-nav">
