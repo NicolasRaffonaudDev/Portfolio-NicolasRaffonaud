@@ -6,7 +6,11 @@ import './Header.css';
 
 const Header = () => {
   const { theme } = useContext(ThemeContext);
-  const hasCv = Boolean(profile.cvUrl);
+  const hasCv = profile.cvAvailable && Boolean(profile.cvUrl);
+  const cvCtaHref = hasCv
+    ? profile.cvUrl
+    : `mailto:${profile.email}?subject=Solicitud%20de%20CV%20-%20Nicolas%20Raffonaud`;
+  const cvCtaLabel = hasCv ? 'Ver CV' : 'Solicitar CV';
 
   return (
     <FadeInWrapper animationClass="slide-in-top" delay={0.5}>
@@ -48,6 +52,16 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 Ver CV
+              </a>
+            )}
+            {!hasCv && (
+              <a
+                className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-secondary'}`}
+                href={cvCtaHref}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {cvCtaLabel}
               </a>
             )}
           </div>

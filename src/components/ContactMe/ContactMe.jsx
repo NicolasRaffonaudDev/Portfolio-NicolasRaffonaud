@@ -5,6 +5,7 @@ import { profile } from '../../data/portfolioData';
 import './ContactMe.css';
 
 const ContactMe = () => {
+    const hasCv = profile.cvAvailable && Boolean(profile.cvUrl);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -94,6 +95,14 @@ const ContactMe = () => {
                     </a>
                     <a href={profile.linkedinUrl} className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn
+                    </a>
+                    <a
+                        href={hasCv ? profile.cvUrl : `mailto:${profile.email}?subject=Solicitud%20de%20CV%20-%20Nicolas%20Raffonaud`}
+                        className="btn btn-outline-secondary mx-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {hasCv ? 'Ver CV' : 'Solicitar CV'}
                     </a>
                 </div>
             </FadeInWrapper>

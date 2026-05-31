@@ -36,7 +36,10 @@ export const profile = {
   githubUrl: 'https://github.com/NicolasRaffonaudDev',
   linkedinUrl: 'https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106',
   whatsappUrl: 'https://wa.me/5491126252321',
-  cvUrl: '',
+  siteUrl: 'https://nicolasraffonaud-portfolio.netlify.app/',
+  cvUrl: '/assets/Nicolas-Gabriel-Raffonaud-CV.pdf',
+  cvAvailable: false,
+  cvFileName: 'public/assets/Nicolas-Gabriel-Raffonaud-CV.pdf',
 };
 
 export const about = {
@@ -90,23 +93,31 @@ export const featuredProject = {
 export const secondaryProjects = [
   {
     title: 'E-commerce GuaridaHW',
+    eyebrow: 'Proyecto de aprendizaje solido',
+    status: 'Proyecto secundario',
     description:
-      'Proyecto de aprendizaje solido en React orientado a arquitectura frontend: SPA con React Router, render dinamico, carrito, componentes reutilizables y Firebase para persistencia y autenticacion.',
-    preview: '/assets/Animation.gif',
+      'Proyecto de aprendizaje solido enfocado en arquitectura frontend con React, React Router y Firebase. Incluye SPA, carrito de compras, componentes reutilizables, render dinamico y una base muy util para entender organizacion de estado, navegacion y flujos de ecommerce.',
+    previewType: 'store',
     liveLink: 'https://guaridahw.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw',
     liveLabel: 'Ver demo',
     tech: ['React', 'React Router', 'Firebase', 'Bootstrap', 'SPA'],
+    deploy: 'Netlify',
+    note: 'Lo presento como proyecto de aprendizaje fuerte, no como mi caso principal de producto.',
   },
   {
     title: 'Portfolio Personal',
+    eyebrow: 'Proyecto propio desarrollado desde cero',
+    status: 'Proyecto secundario',
     description:
-      'Portfolio propio desarrollado con React, Vite y JavaScript para presentar proyectos, skills y evolucion profesional. Incluye modo claro/oscuro, animaciones suaves, tsparticles y una estructura adaptable a nuevas versiones del perfil.',
+      'Portfolio desarrollado desde cero como parte de mi evolucion profesional, aplicando React, Vite, componentizacion, responsive design, modo claro/oscuro, animaciones, organizacion de datos y optimizacion de presentacion para recruiters.',
+    previewType: 'portfolio',
     liveLink: 'https://nicolasraffonaud-portfolio.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/Portfolio-NicolasRaffonaud',
-    liveLabel: 'Ver portfolio',
+    liveLabel: 'Ver sitio',
     tech: ['React', 'Vite', 'JavaScript', 'Bootstrap/CSS', 'tsparticles'],
-    placeholder: 'Portfolio React + Vite',
+    deploy: 'Netlify',
+    note: 'Listo para reemplazar este mockup por una captura real en public/assets/projects/portfolio-preview.png cuando quieras sumar screenshot propio.',
   },
 ];
 

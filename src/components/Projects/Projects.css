@@ -39,6 +39,34 @@ body.dark .projects-intro {
   object-fit: cover;
 }
 
+.project-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.project-badge,
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.project-badge {
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+
+.project-status {
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
 .project-placeholder {
   display: flex;
   align-items: center;
@@ -54,6 +82,111 @@ body.dark .projects-intro {
   text-align: center;
 }
 
+.project-mockup {
+  min-height: 220px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(13, 110, 253, 0.12);
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.14), rgba(255, 255, 255, 0.92));
+}
+
+.project-mockup-topbar {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.85rem 0.9rem;
+}
+
+.project-mockup-topbar span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.25);
+}
+
+.project-mockup-store,
+.project-mockup-portfolio {
+  padding: 0 0.95rem 0.95rem;
+}
+
+.project-store-hero,
+.project-portfolio-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.project-store-hero div,
+.project-portfolio-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-store-hero strong,
+.project-portfolio-hero strong {
+  font-size: 1rem;
+}
+
+.project-store-hero small,
+.project-portfolio-hero small,
+.project-portfolio-hero span {
+  color: #5b6472;
+}
+
+.project-store-badge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: #111827;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.project-store-grid,
+.project-portfolio-panels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.85rem;
+}
+
+.project-store-card,
+.project-portfolio-panel {
+  min-height: 72px;
+  padding: 0.85rem;
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.project-portfolio-panel-accent {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.18), rgba(13, 110, 253, 0.08));
+  color: #0d6efd;
+}
+
+.project-store-footer,
+.project-portfolio-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+  color: #4b5563;
+  font-size: 0.8rem;
+}
+
+.project-portfolio-footer {
+  justify-content: flex-start;
+}
+
 .project-tech-list {
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +200,19 @@ body.dark .projects-intro {
   background: rgba(13, 110, 253, 0.08);
   font-size: 0.86rem;
   font-weight: 500;
+}
+
+.project-meta {
+  margin-bottom: 0.8rem;
+  color: #6c757d;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.project-note {
+  margin-bottom: 1.1rem;
+  color: #4b5563;
+  font-size: 0.92rem;
 }
 
 .project-actions {
@@ -109,8 +255,41 @@ body.dark .projects-intro {
   color: #8ab4ff;
 }
 
+.projects-section.dark .project-mockup {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.2), rgba(31, 41, 55, 0.96));
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.projects-section.dark .project-store-hero,
+.projects-section.dark .project-portfolio-hero,
+.projects-section.dark .project-store-card,
+.projects-section.dark .project-portfolio-panel {
+  background: rgba(17, 24, 39, 0.88);
+  color: #f8f9fa;
+}
+
+.projects-section.dark .project-store-hero small,
+.projects-section.dark .project-portfolio-hero small,
+.projects-section.dark .project-portfolio-hero span,
+.projects-section.dark .project-store-footer,
+.projects-section.dark .project-portfolio-footer,
+.projects-section.dark .project-note,
+.projects-section.dark .project-meta {
+  color: #d1d5db;
+}
+
 @media (max-width: 767px) {
   .projects-section h2 {
     font-size: 2.5rem;
+  }
+
+  .project-store-grid,
+  .project-portfolio-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .project-store-footer,
+  .project-portfolio-footer {
+    flex-direction: column;
   }
 }
