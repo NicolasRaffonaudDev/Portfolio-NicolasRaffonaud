@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -36,19 +41,14 @@ button {
   cursor: pointer;
 }
 
-.particles-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vw;
-  z-index: -10;
-  pointer-events: none;
-}
-
 .app-container {
   position: relative;
   z-index: 1;
   background-color: transparent;
   min-height: 100vh;
+}
+
+section {
+  position: relative;
+  z-index: 1;
 }

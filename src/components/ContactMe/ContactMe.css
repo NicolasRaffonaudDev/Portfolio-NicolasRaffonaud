@@ -1,11 +1,21 @@
 .contact-section h2 {
   font-size: 3rem;
-  margin-bottom: 50px;
+}
+
+.contact-intro {
+  max-width: 760px;
+  color: #6c757d;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .contact-section .btn {
   font-size: 1.1rem;
-  /* Ajusta el tamaño si es necesario */
 }
 
 .contact-form .form-control {
@@ -25,13 +35,15 @@
 }
 
 .contact-section .btn-outline-dark,
-.contact-section .btn-outline-primary {
+.contact-section .btn-outline-primary,
+.contact-section .btn-outline-secondary {
   margin-top: 15px;
   padding: 10px 20px;
 }
 
 .contact-section .btn-outline-dark:hover,
-.contact-section .btn-outline-primary:hover {
+.contact-section .btn-outline-primary:hover,
+.contact-section .btn-outline-secondary:hover {
   transform: translateY(-2px);
   transition: transform 0.2s ease;
 }

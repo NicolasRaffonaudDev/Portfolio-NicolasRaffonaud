@@ -1,5 +1,6 @@
 import FadeInWrapper from '../FadeInWrapper/FadeInWrapper';
 import PerfilImage from '../../assets/PerfilImage.jpeg';
+import { about } from '../../data/portfolioData';
 import './AboutMe.css';
 
 const AboutMe = () => {
@@ -8,30 +9,43 @@ const AboutMe = () => {
             <div className="row align-items-center">
                 <div className="col-md-6">
                     <FadeInWrapper animationClass="slide-in-left">
-                        <div>
-                            <h2 className="display-4">Sobre Mí</h2>
-                            <p className="lead">
-                                Soy un programador enfocado en la creación de aplicaciones web modernas y responsivas.
-                                Me encanta resolver problemas y trabajar con tecnologías como HTML, CSS, JavaScript y React, entre otras.
-                            </p>
-                            <p>
-                                En mi tiempo libre, disfruto aprendiendo sobre técnicas de programación.
-                                En este momento estoy buscando nuevos desafíos y oportunidades para crecer.
-                            </p>
+                        <div className="about-copy">
+                            <h2 className="display-4">{about.title}</h2>
+                            {about.paragraphs.map((paragraph) => (
+                                <p key={paragraph} className="about-paragraph">
+                                    {paragraph}
+                                </p>
+                            ))}
 
-                            <a href="#contact" className="btn btn-primary">
-                                Contactame
-                            </a>
+                            <div className="about-highlights">
+                                {about.highlights.map((highlight) => (
+                                    <div key={highlight} className="about-highlight-card">
+                                        {highlight}
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="about-actions">
+                                <a href="#featured-project" className="btn btn-primary">
+                                    Ver proyecto principal
+                                </a>
+                                <a href="#contact" className="btn btn-outline-secondary">
+                                    Contacto
+                                </a>
+                            </div>
                         </div>
                     </FadeInWrapper>
                 </div>
-                <div className="col-md-6 text-center text-md-end">
+                <div className="col-md-6 text-center text-md-end mt-4 mt-md-0">
                     <FadeInWrapper animationClass="slide-in-right">
-                        <img
-                            src={PerfilImage}
-                            alt="Your Profile"
-                            className="img-fluid rounded-circle profile-img"
-                        />
+                        <div className="about-visual-wrapper">
+                            <img
+                                src={PerfilImage}
+                                alt="Foto de perfil de Nicolas Gabriel Raffonaud"
+                                className="img-fluid rounded-circle profile-img"
+                            />
+                            <div className="about-badge">React + Full Stack Junior</div>
+                        </div>
                     </FadeInWrapper>
                 </div>
             </div>

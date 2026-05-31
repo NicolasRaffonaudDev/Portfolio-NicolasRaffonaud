@@ -1,8 +1,9 @@
 import { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
-import {  FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
-import "./Footer.css"
+import { ThemeContext } from '../../context/ThemeContext';
+import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { profile } from '../../data/portfolioData';
+import './Footer.css';
 
 const Footer = () => {
   const { theme } = useContext(ThemeContext);
@@ -13,23 +14,31 @@ const Footer = () => {
         <div className="container">
           <div className="row justify-content-between text-center">
             <div className="col-md-6">
-              <h5>Nicolás Gabriel Raffonaud</h5>
-              <p>Desarrollado con enfoque de aprendizaje.</p>
+              <h5>{profile.name}</h5>
+              <p>Portfolio desarrollado con React y Vite. Proyecto en evolucion continua.</p>
             </div>
 
             <div className="col-md-6">
-              <h5>Redes Sociales:</h5>
+              <h5>Contactame en:</h5>
               <div>
                 <a
-                  href="https://instagram.com/tu-usuario"
-                  className="footer-icon instagram me-3"
+                  href={profile.linkedinUrl}
+                  className="footer-icon linkedin me-3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram size={30} />
+                  <FaLinkedin size={30} />
                 </a>
                 <a
-                  href="https://wa.me/5491126252321"
+                  href={profile.githubUrl}
+                  className="footer-icon github me-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={30} />
+                </a>
+                <a
+                  href={profile.whatsappUrl}
                   className="footer-icon whatsapp me-3"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -37,7 +46,7 @@ const Footer = () => {
                   <FaWhatsapp size={30} />
                 </a>
                 <a
-                  href="nicolasraffonaudsoft@gmail.com"
+                  href={`mailto:${profile.email}`}
                   className="footer-icon gmail"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -48,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Nicolas Gabriel Raffonaud. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>

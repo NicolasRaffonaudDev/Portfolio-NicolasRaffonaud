@@ -1,9 +1,17 @@
 .projects-section h2 {
   font-size: 3rem;
-  margin-bottom: 50px;
   color: inherit;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   transition: color 0.3s ease-in-out;
+}
+
+.projects-intro {
+  max-width: 760px;
+  color: #6c757d;
+}
+
+body.dark .projects-intro {
+  color: #c2c2c2;
 }
 
 .card {
@@ -25,8 +33,46 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card .btn {
-  margin-top: 10px;
+.project-card .card-img-top {
+  border-radius: 0.75rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.15), rgba(13, 110, 253, 0.04));
+  border: 1px dashed rgba(13, 110, 253, 0.35);
+  color: #0d6efd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.project-tech-chip {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(13, 110, 253, 0.08);
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .projects-section {
@@ -56,4 +102,15 @@
 
 .projects-section.dark .card:hover {
   box-shadow: 0 12px 25px rgba(117, 112, 112, 0.8);
+}
+
+.projects-section.dark .project-placeholder {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.22), rgba(255, 255, 255, 0.04));
+  color: #8ab4ff;
+}
+
+@media (max-width: 767px) {
+  .projects-section h2 {
+    font-size: 2.5rem;
+  }
 }

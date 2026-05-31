@@ -1,30 +1,71 @@
 import { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
 import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
-import "./Header.css"
+import { ThemeContext } from '../../context/ThemeContext';
+import { profile } from '../../data/portfolioData';
+import './Header.css';
 
 const Header = () => {
   const { theme } = useContext(ThemeContext);
+  const hasCv = Boolean(profile.cvUrl);
 
   return (
     <FadeInWrapper animationClass="slide-in-top" delay={0.5}>
       <header
-        className={`py-4 ${theme === 'dark' ? 'bg-dark-theme text-light' : 'bg-light-theme text-dark'}`}
+        className={`hero-section py-5 ${theme === 'dark' ? 'bg-dark-theme text-light' : 'bg-light-theme text-dark'}`}
       >
         <div className="container text-center">
-          <h1>Nicolas Gabriel Raffonaud</h1>
-          <p className="lead">Programador Front-End | Creador de Apps web.</p>
-          <nav className="navbar navbar-expand-lg">
+          <span className="hero-eyebrow">{profile.role}</span>
+          <h1>{profile.name}</h1>
+          <p className="lead hero-headline">{profile.headline}</p>
+          <p className="hero-copy mx-auto">{profile.focus}</p>
+          <p className="hero-availability mx-auto">{profile.availability}</p>
+
+          <div className="hero-cta-group">
+            <a className="btn btn-primary" href="#featured-project">
+              Ver proyectos
+            </a>
+            <a
+              className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-dark'}`}
+              href={profile.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="btn btn-outline-primary"
+              href={profile.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            {hasCv && (
+              <a
+                className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-secondary'}`}
+                href={profile.cvUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver CV
+              </a>
+            )}
+          </div>
+
+          <nav className="navbar navbar-expand-lg hero-nav">
             <div className="container-fluid justify-content-center">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav hero-nav-list">
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#about">Sobre Mí</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#about">Sobre mi</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#skills">Tecnologías</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#featured-project">Proyecto destacado</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#projects">Proyectos</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#projects">Otros proyectos</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#skills">Tecnologias</a>
                 </li>
                 <li className="nav-item">
                   <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#contact">Contacto</a>

@@ -1,12 +1,10 @@
-import { useContext, useState } from "react";
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { ThemeContext } from "../../context/ThemeContext";
+import { useState } from "react";
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import FadeInWrapper from "../FadeInWrapper/FadeInWrapper";
+import { profile } from '../../data/portfolioData';
 import './ContactMe.css';
 
 const ContactMe = () => {
-    const { theme } = useContext(ThemeContext);
-
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -22,16 +20,22 @@ const ContactMe = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // FALTA LOGICA PARA ENVIAR FORMULARIO
-        console.log('Form submitted:', formData);
-        // RESET DE FORMULARIO
+        const subject = encodeURIComponent(`Contacto desde portfolio - ${formData.name}`);
+        const body = encodeURIComponent(
+            `Nombre: ${formData.name}\nEmail: ${formData.email}\n\nMensaje:\n${formData.message}`
+        );
+
+        window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
         setFormData({ name: '', email: '', message: '' });
     };
 
     return (
         <section id="contact" className="contact-section container py-5">
             <FadeInWrapper animationClass="fade-in">
-                <h2 className="display-4 text-center mb-5">Contacto</h2>
+                <h2 className="display-4 text-center mb-3">Contacto</h2>
+                <p className="contact-intro text-center mx-auto mb-5">
+                    Mi canal principal es email y LinkedIn. Si completas el formulario, se abrira tu cliente de correo con el mensaje listo para enviar.
+                </p>
 
                 <div className="row justify-content-center">
                     <div className="col-md-8">
@@ -75,17 +79,20 @@ const ContactMe = () => {
                                 />
                             </div>
 
-                            <button type="submit" className="btn btn-primary btn-block">Enviar Mensaje</button>
+                            <button type="submit" className="btn btn-primary btn-block">Abrir email</button>
                         </form>
                     </div>
                 </div>
 
-                <div className="text-center mt-5">
-                    <p>Conecta conmigo en:</p>
-                    <a href="https://github.com/NicolasRaffonaudDev" className="btn btn-outline-dark mx-2" target="_blank" rel="noopener noreferrer">
+                <div className="text-center mt-5 contact-actions">
+                    <p className="mb-3">Tambien podes contactarme directo por:</p>
+                    <a href={`mailto:${profile.email}`} className="btn btn-outline-secondary mx-2" target="_blank" rel="noopener noreferrer">
+                        <FaEnvelope style={{ marginRight: '8px' }} /> Email
+                    </a>
+                    <a href={profile.githubUrl} className="btn btn-outline-dark mx-2" target="_blank" rel="noopener noreferrer">
                         <FaGithub style={{ marginRight: '8px' }} /> GitHub
                     </a>
-                    <a href="https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106" className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer">
+                    <a href={profile.linkedinUrl} className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn
                     </a>
                 </div>
