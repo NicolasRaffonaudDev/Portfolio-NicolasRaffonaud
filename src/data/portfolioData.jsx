@@ -1,4 +1,3 @@
-import AnimationPreview from '../assets/Animation.gif';
 import {
   FaCss3Alt,
   FaGithub,
@@ -93,7 +92,7 @@ export const secondaryProjects = [
     title: 'E-commerce GuaridaHW',
     description:
       'Proyecto de aprendizaje solido en React orientado a arquitectura frontend: SPA con React Router, render dinamico, carrito, componentes reutilizables y Firebase para persistencia y autenticacion.',
-    preview: AnimationPreview,
+    preview: '/assets/Animation.gif',
     liveLink: 'https://guaridahw.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw',
     liveLabel: 'Ver demo',
