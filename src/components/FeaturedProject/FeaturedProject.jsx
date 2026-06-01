@@ -23,6 +23,10 @@ const FeaturedProject = () => {
                 ))}
               </div>
 
+              <p className="featured-project-techline">
+                <strong>Capas tecnicas:</strong> {featuredProject.technicalDetails.join(', ')}.
+              </p>
+
               <div className="row mt-4">
                 <div className="col-md-6">
                   <h3 className="featured-project-list-title">Puntos destacados</h3>

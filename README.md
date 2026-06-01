@@ -78,3 +78,5 @@ Netlify permite sumar un dominio personalizado sin cambiar el flujo actual. Reco
 - comprar un dominio tipo `nicolasraffonaud.dev` o `nicolasraffonaud.com`
 - mantener Netlify como hosting principal
 - apuntar DNS y conservar deploy automatico desde GitHub
+
+Proxima mejora recomendada: configurar dominio propio cuando el portfolio ya tenga sus capturas finales y el CV publico cargado.
