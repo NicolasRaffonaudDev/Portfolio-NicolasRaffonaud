@@ -76,6 +76,13 @@ body.dark .featured-project-techline {
   color: #d7dbe0;
 }
 
+.featured-project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.35rem;
+}
+
 .featured-project-list-title {
   margin-bottom: 0.85rem;
   font-size: 1.05rem;
@@ -136,6 +143,28 @@ body.dark .featured-project-techline {
   display: block;
 }
 
+.featured-gallery-main-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background:
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.12), transparent 55%),
+    rgba(241, 245, 249, 0.92);
+}
+
+.featured-gallery-image-mobile {
+  width: auto;
+  max-width: min(100%, 240px);
+  max-height: 420px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1.8rem;
+  border: 8px solid rgba(15, 23, 42, 0.92);
+  box-shadow: 0 24px 36px rgba(15, 23, 42, 0.22);
+  background: #0f172a;
+}
+
 .featured-gallery-caption {
   position: absolute;
   left: 1rem;
@@ -192,6 +221,18 @@ body.dark .featured-project-techline {
   margin-bottom: 0.45rem;
 }
 
+.featured-thumb-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-thumb-image-mobile {
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  padding: 0.2rem;
+  background: rgba(226, 232, 240, 0.92);
+}
+
 .featured-thumb span {
   display: block;
   font-size: 0.8rem;
@@ -233,8 +274,18 @@ body.dark .featured-thumb {
   border-color: rgba(255, 255, 255, 0.08);
 }
 
+body.dark .featured-gallery-main-mobile {
+  background:
+    radial-gradient(circle at top, rgba(96, 165, 250, 0.16), transparent 55%),
+    rgba(15, 23, 42, 0.86);
+}
+
 body.dark .featured-thumb {
   color: #f8fafc;
+}
+
+body.dark .featured-thumb-image-mobile {
+  background: rgba(30, 41, 59, 0.9);
 }
 
 @media (max-width: 767px) {
@@ -250,11 +301,21 @@ body.dark .featured-thumb {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .featured-gallery-image-mobile {
+    max-width: min(100%, 185px);
+    max-height: 320px;
+    border-width: 6px;
+  }
+
   .featured-project-grid {
     grid-template-columns: 1fr;
   }
 
   .featured-project-techline {
     font-size: 0.96rem;
+  }
+
+  .featured-project-actions {
+    flex-direction: column;
   }
 }

@@ -26,7 +26,7 @@ const Header = () => {
 
           <div className="hero-cta-group">
             <a className="btn btn-primary btn-brand-primary" href="#featured-project">
-              Ver proyectos
+              Ver proyecto principal
             </a>
             <a
               className="btn btn-brand-outline"
@@ -73,7 +73,7 @@ const Header = () => {
                   <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#about">Sobre mi</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#featured-project">Proyecto destacado</a>
+                  <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#featured-project">Proyecto principal</a>
                 </li>
                 <li className="nav-item">
                   <a className={`nav-link ${theme === 'dark' ? 'text-light' : 'text-dark'}`} href="#projects">Otros proyectos</a>

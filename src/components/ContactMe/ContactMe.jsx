@@ -35,7 +35,7 @@ const ContactMe = () => {
             <FadeInWrapper animationClass="fade-in">
                 <h2 className="display-4 text-center mb-3">Contacto</h2>
                 <p className="contact-intro text-center mx-auto mb-5">
-                    Mi canal principal es email y LinkedIn. Si completas el formulario, se abrira tu cliente de correo con el mensaje listo para enviar.
+                    Mi canal principal es email y LinkedIn. Si completas el formulario, dejo el mensaje preparado en tu cliente de correo para que puedas enviarlo con tus datos.
                 </p>
 
                 <div className="row justify-content-center">
@@ -80,7 +80,7 @@ const ContactMe = () => {
                                 />
                             </div>
 
-                            <button type="submit" className="btn btn-primary btn-brand-primary btn-block">Abrir email</button>
+                            <button type="submit" className="btn btn-primary btn-brand-primary btn-block">Enviar consulta</button>
                         </form>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const ContactMe = () => {
                 <div className="text-center mt-5 contact-actions">
                     
                     <a href={`mailto:${profile.email}`} className="btn btn-brand-contact mx-2" target="_blank" rel="noopener noreferrer">
-                        <FaEnvelope style={{ marginRight: '8px' }} /> Email
+                        <FaEnvelope style={{ marginRight: '8px' }} /> Enviar consulta
                     </a>
                     <a href={profile.githubUrl} className="btn btn-brand-outline mx-2" target="_blank" rel="noopener noreferrer">
                         <FaGithub style={{ marginRight: '8px' }} /> GitHub

@@ -1,7 +1,7 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import './ParticlesBackground.css'
-import fuegos from '../../assets/geometry.webp'
+import geometryShape from '../../assets/geometryy-rem.png'
 
 const ParticlesBackground = () => {
   const particlesInit = async (main) => {
@@ -29,7 +29,7 @@ const ParticlesBackground = () => {
             type: "image",
             options: {
               image: {
-                src: fuegos, // RUTA DE IMAGEN DINAMICA
+                src: geometryShape, // RUTA DE IMAGEN DINAMICA
                 width: 55,
                 height: 55,
               }

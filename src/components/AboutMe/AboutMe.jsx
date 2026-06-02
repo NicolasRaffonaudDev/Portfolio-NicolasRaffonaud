@@ -27,10 +27,10 @@ const AboutMe = () => {
 
                             <div className="about-actions">
                                 <a href="#featured-project" className="btn btn-primary">
-                                    Ver proyecto principal
+                                    Ver Raices Puntanas
                                 </a>
                                 <a href="#contact" className="btn btn-outline-secondary">
-                                    Contacto
+                                    Enviar consulta
                                 </a>
                             </div>
                         </div>

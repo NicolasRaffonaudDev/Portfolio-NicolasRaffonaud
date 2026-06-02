@@ -37,6 +37,7 @@ const FeaturedProject = () => {
 
   const selectedItem =
     galleryItems.find((item) => item.key === selectedKey) ?? galleryItems[0] ?? null;
+  const isMobileSelected = selectedItem?.variant === 'mobile';
 
   return (
     <section id="featured-project" className="featured-project-section container py-5">
@@ -44,7 +45,7 @@ const FeaturedProject = () => {
         <div className="featured-project-shell">
           <div className="row align-items-center g-4">
             <div className="col-lg-6">
-              <span className="featured-project-label">Proyecto destacado</span>
+              <span className="featured-project-label">Proyecto principal</span>
               <h2 className="display-4 mt-3">{featuredProject.title}</h2>
               <p className="featured-project-subtitle">{featuredProject.subtitle}</p>
               <p className="featured-project-status">{featuredProject.status}</p>
@@ -61,6 +62,20 @@ const FeaturedProject = () => {
               <p className="featured-project-techline">
                 <strong>Capas tecnicas:</strong> {featuredProject.technicalDetails.join(', ')}.
               </p>
+
+              <div className="featured-project-actions">
+                <a
+                  href={featuredProject.demoUrl}
+                  className="btn btn-brand-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {featuredProject.demoLabel}
+                </a>
+                <a href="#contact" className="btn btn-brand-outline">
+                  Enviar consulta
+                </a>
+              </div>
 
               <div className="row mt-4">
                 <div className="col-md-6">
@@ -85,11 +100,13 @@ const FeaturedProject = () => {
             <div className="col-lg-6">
               {selectedItem ? (
                 <div className="featured-gallery-shell">
-                  <div className="featured-gallery-main">
+                  <div
+                    className={`featured-gallery-main ${isMobileSelected ? 'featured-gallery-main-mobile' : ''}`}
+                  >
                     <img
                       src={selectedItem.src}
                       alt={selectedItem.alt ?? `${featuredProject.title} - ${selectedItem.label}`}
-                      className="featured-gallery-image"
+                      className={`featured-gallery-image ${isMobileSelected ? 'featured-gallery-image-mobile' : ''}`}
                       decoding="async"
                     />
                     <span className="featured-gallery-caption">{selectedItem.label}</span>
@@ -100,7 +117,7 @@ const FeaturedProject = () => {
                       <button
                         key={item.key}
                         type="button"
-                        className={`featured-thumb ${selectedKey === item.key ? 'active' : ''}`}
+                        className={`featured-thumb ${selectedKey === item.key ? 'active' : ''} ${item.variant === 'mobile' ? 'featured-thumb-mobile' : ''}`}
                         onClick={() => setSelectedKey(item.key)}
                         aria-label={`Ver captura ${item.label}`}
                         aria-pressed={selectedKey === item.key}
@@ -108,7 +125,7 @@ const FeaturedProject = () => {
                         <img
                           src={item.src}
                           alt={item.alt ?? item.label}
-                          className="featured-thumb-image"
+                          className={`featured-thumb-image ${item.variant === 'mobile' ? 'featured-thumb-image-mobile' : ''}`}
                           loading="lazy"
                           decoding="async"
                         />

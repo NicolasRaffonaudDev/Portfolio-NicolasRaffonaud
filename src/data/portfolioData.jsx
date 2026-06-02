@@ -27,9 +27,9 @@ import {
 export const profile = {
   name: 'Nicolas Gabriel Raffonaud',
   role: 'Frontend Developer React',
-  headline: 'Construyo aplicaciones web modernas con React, JavaScript y TypeScript.',
+  headline: 'Construyo interfaces modernas y aplicaciones web con React, JavaScript y TypeScript.',
   focus:
-    'Actualmente desarrollo proyectos full stack con Node.js, Express, PostgreSQL y Prisma, con foco en producto real, criterio tecnico y mejora continua.',
+    'Estoy ampliando mi perfil hacia Full Stack con Node.js, Express, PostgreSQL y Prisma, construyendo proyectos propios con foco en producto real y criterio tecnico.',
   availability: 'Disponible para oportunidades Frontend React y Full Stack Junior en Argentina y LATAM.',
   location: 'Argentina | LATAM',
   email: 'nicolasraffonaudsoft@gmail.com',
@@ -45,9 +45,9 @@ export const profile = {
 export const about = {
   title: 'Sobre mi',
   paragraphs: [
-    'Vengo de experiencia tecnica y soporte, y reoriente mi perfil hacia el desarrollo frontend y full stack con una base de aprendizaje practico y construccion constante.',
-    'Desarrolle este portfolio yo mismo con React y Vite como parte de ese proceso. Me interesa resolver problemas, mejorar experiencia de usuario y construir productos web que conecten necesidad real con una solucion clara.',
-    'Uso herramientas de IA como ChatGPT, Copilot y Codex para investigar, depurar, acelerar iteraciones y revisar alternativas, pero siempre involucrandome activamente en las decisiones tecnicas y en la comprension del codigo.',
+    'Vengo de una base tecnica en soporte y resolucion de problemas. Hoy estoy enfocado en desarrollo frontend y full stack, construyendo proyectos propios que me permiten aplicar lo aprendido en escenarios reales.',
+    'Este portfolio y Raices Puntanas forman parte de ese recorrido. Me interesa resolver problemas concretos, cuidar la experiencia de usuario y convertir una necesidad real en una solucion clara.',
+    'Uso herramientas de IA como apoyo para investigar, depurar y acelerar iteraciones, manteniendo criterio tecnico y participacion activa en cada decision.',
   ],
   highlights: [
     'Interfaces SPA en React con foco en claridad, componentes reutilizables y responsive design.',
@@ -59,9 +59,11 @@ export const about = {
 export const featuredProject = {
   title: 'Raices Puntanas',
   subtitle: 'Plataforma full stack de gestion comercial e inmobiliaria',
-  status: 'Staging en Railway | En validacion funcional',
+  status: 'Staging en Railway | Entorno de prueba funcional',
   description:
-    'Aplicacion web full stack desarrollada como proyecto real. Integra frontend, backend, base de datos, autenticacion, roles, gestion comercial y despliegue cloud, con una estructura preparada para seguir evolucionando hacia un entorno productivo mas robusto.',
+    'Mi proyecto principal: una plataforma full stack de gestion comercial e inmobiliaria, hoy desplegada en Railway como entorno de staging. Integra frontend, backend, base de datos, autenticacion, roles y flujos de gestion pensados para un caso de uso real.',
+  demoUrl: 'https://frontend-production-1cb7e.up.railway.app/',
+  demoLabel: 'Ver demo en Railway',
   stack: [
     'React',
     'TypeScript',
@@ -133,6 +135,7 @@ export const featuredProject = {
       key: 'mobile',
       label: 'Mobile',
       alt: 'Vista mobile responsive de Raices Puntanas',
+      variant: 'mobile',
       sources: [
         '/assets/projects/raices-mobile.webp',
         '/assets/projects/raices-mobile.png',
@@ -140,18 +143,18 @@ export const featuredProject = {
     },
   ],
   features: [
-    'Autenticacion JWT y sistema de roles.',
-    'CRUD de lotes, clientes, ventas e inventario.',
-    'Dashboard administrativo y gestion comercial.',
-    'CRM para consultas, seguimiento e integracion de mapas.',
-    'Persistencia de imagenes y API REST con Express.',
+    'Autenticacion JWT con control de acceso por roles.',
+    'Gestion de lotes, clientes, ventas e inventario.',
+    'Dashboard administrativo para seguimiento comercial.',
+    'CRM para consultas, seguimiento e integracion con mapas.',
+    'API REST con Express y manejo de imagenes.',
     'Modelado relacional con PostgreSQL y Prisma.',
   ],
   challenges: [
-    'Resolucion de CORS y configuracion entre servicios.',
-    'Deploy cloud en Railway con preparacion para migracion a VPS.',
+    'Configuracion entre servicios, CORS y variables de entorno.',
+    'Deploy en Railway con una base preparada para seguir escalando.',
     'Persistencia de archivos y debugging de errores reales.',
-    'Configuracion de Docker, Nginx y conectividad PostgreSQL/Prisma.',
+    'Docker, Nginx y conectividad entre PostgreSQL y Prisma.',
   ],
   mockupItems: ['Login y roles', 'Dashboard', 'CRM', 'Lotes', 'Mobile ready'],
 };
@@ -159,10 +162,10 @@ export const featuredProject = {
 export const secondaryProjects = [
   {
     title: 'E-commerce GuaridaHW',
-    eyebrow: 'Proyecto de aprendizaje solido',
-    status: 'Proyecto secundario',
+    eyebrow: 'Proyecto de aprendizaje practico',
+    status: 'Aprendizaje aplicado',
     description:
-      'Proyecto de aprendizaje solido enfocado en arquitectura frontend con React, React Router y Firebase. Incluye SPA, carrito de compras, componentes reutilizables, render dinamico y una base muy util para entender organizacion de estado, navegacion y flujos de ecommerce.',
+      'Proyecto de aprendizaje en React enfocado en arquitectura frontend. Incluye SPA, carrito de compras, componentes reutilizables, render dinamico y una base solida para trabajar navegacion, estado y flujos de ecommerce.',
     previewSources: ['/assets/projects/guaridahw2.gif'],
     previewAlt: 'Preview temporal del ecommerce GuaridaHW con animacion del catalogo',
     previewType: 'store',
@@ -171,14 +174,14 @@ export const secondaryProjects = [
     liveLabel: 'Ver demo',
     tech: ['React', 'React Router', 'Firebase', 'Bootstrap', 'SPA'],
     deploy: 'Netlify',
-    note: 'Usa un GIF temporal real como preview. A futuro conviene reemplazarlo por capturas optimizadas en WebP o un video mas liviano.',
+    note: 'Lo presento como una base fuerte de aprendizaje frontend. El preview actual es temporal y mas adelante conviene reemplazarlo por capturas optimizadas.',
   },
   {
     title: 'Portfolio Personal',
     eyebrow: 'Proyecto propio desarrollado desde cero',
-    status: 'Proyecto secundario',
+    status: 'Proyecto complementario',
     description:
-      'Portfolio desarrollado desde cero como parte de mi evolucion profesional, aplicando React, Vite, componentizacion, responsive design, modo claro/oscuro, animaciones, organizacion de datos y optimizacion de presentacion para recruiters.',
+      'Portfolio desarrollado desde cero como parte de mi evolucion profesional, aplicando React, Vite, componentizacion, responsive design, modo claro/oscuro, animaciones y una presentacion pensada para recruiters.',
     previewType: 'portfolio',
     previewSources: [
       '/assets/projects/portfolio-preview.webp',
@@ -190,7 +193,7 @@ export const secondaryProjects = [
     liveLabel: 'Ver sitio',
     tech: ['React', 'Vite', 'JavaScript', 'Bootstrap/CSS', 'tsparticles'],
     deploy: 'Netlify',
-    note: 'Ya usa captura real desde public/assets/projects/portfolio-preview.webp o .png cuando el asset esta disponible.',
+    note: 'Ademas de presentarme, este proyecto me sirvio para trabajar estructura, copy, jerarquia visual y experiencia de navegacion.',
   },
 ];
 
@@ -324,9 +327,9 @@ export const skillGroups = [
         description: 'Repositorios y documentacion tecnica.',
       },
       {
-        name: 'IA asistida',
+        name: 'IA aplicada',
         icon: <SiGithubcopilot style={{ color: '#0ea5e9' }} />,
-        description: 'Debugging, investigacion y mejora iterativa.',
+        description: 'Investigacion, debugging y mejora iterativa.',
       },
     ],
   },

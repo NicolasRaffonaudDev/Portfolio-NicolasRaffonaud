@@ -15,11 +15,11 @@ const Footer = () => {
           <div className="row justify-content-between text-center">
             <div className="col-md-6">
               <h5>{profile.name}</h5>
-              <p>Portfolio desarrollado con React y Vite. Proyecto en evolucion continua.</p>
+              <p>Portfolio desarrollado con React y Vite para presentar proyectos reales, stack tecnico y disponibilidad laboral.</p>
             </div>
 
             <div className="col-md-6">
-              <h5>Contactame en:</h5>
+              <h5>Tambien podes encontrarme en:</h5>
               <div>
                 <a
                   href={profile.linkedinUrl}
