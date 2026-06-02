@@ -1,9 +1,9 @@
 .bg-dark-theme {
-  background-color: #181818;
+  background-color: transparent;
 }
 
 .bg-light-theme {
-  background-color: #f0f0f0;
+  background-color: transparent;
 }
 
 .text-dark {
@@ -17,6 +17,16 @@
 .hero-section {
   padding-top: 4.5rem !important;
   padding-bottom: 3rem !important;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  backdrop-filter: blur(14px);
+}
+
+body.dark .hero-section {
+  background: rgba(9, 17, 31, 0.58);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 36px rgba(2, 6, 23, 0.18);
 }
 
 .hero-eyebrow {
@@ -80,7 +90,31 @@ body.dark .hero-availability {
 }
 
 .hero-nav .nav-link {
+  position: relative;
   font-weight: 500;
+  opacity: 0.82;
+}
+
+.hero-nav .nav-link:hover {
+  opacity: 1;
+}
+
+.hero-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.2rem;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.9), rgba(37, 99, 235, 0));
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.hero-nav .nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 @media (max-width: 576px) {

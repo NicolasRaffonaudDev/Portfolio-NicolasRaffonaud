@@ -1,11 +1,45 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import { FaArrowRight, FaGithub } from 'react-icons/fa';
 import FadeInWrapper from '../FadeInWrapper/FadeInWrapper';
 import { secondaryProjects } from '../../data/portfolioData';
+import { resolveAssetSource } from '../../utils/resolveAssetSource';
 import './Projects.css'
 
-const renderProjectPreview = (project) => {
+const ProjectVisual = ({ project }) => {
+  const [resolvedPreview, setResolvedPreview] = useState(project.preview ?? null);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadPreview = async () => {
+      if (project.preview) {
+        setResolvedPreview(project.preview);
+        return;
+      }
+
+      if (!project.previewSources?.length) {
+        setResolvedPreview(null);
+        return;
+      }
+
+      const resolvedSource = await resolveAssetSource(project.previewSources);
+      if (mounted) {
+        setResolvedPreview(resolvedSource);
+      }
+    };
+
+    loadPreview();
+
+    return () => {
+      mounted = false;
+    };
+  }, [project.preview, project.previewSources]);
+
+  if (resolvedPreview) {
+    return <img src={resolvedPreview} alt={project.title} className="card-img-top" />;
+  }
+
   if (project.previewType === 'store') {
     return (
       <div className="project-mockup project-mockup-store" aria-label={`${project.title} preview`}>
@@ -81,9 +115,7 @@ const Projects = () => {
           <div key={project.title} className="col-lg-6 mb-4">
             <FadeInWrapper animationClass={index % 2 === 0 ? "slide-in-left" : "slide-in-right"}>
               <div className="card project-card shadow-sm h-100">
-                {project.preview ? (
-                  <img src={project.preview} alt={project.title} className="card-img-top" />
-                ) : renderProjectPreview(project)}
+                <ProjectVisual project={project} />
                 <div className="card-body d-flex flex-column">
                   <div className="project-card-header">
                     <span className="project-badge">{project.eyebrow}</span>
@@ -104,10 +136,10 @@ const Projects = () => {
                   <p className="project-note">{project.note}</p>
 
                   <div className="project-actions mt-auto">
-                    <a href={project.liveLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <a href={project.liveLink} className="btn btn-primary btn-brand-primary" target="_blank" rel="noopener noreferrer">
                       <FaArrowRight style={{ marginRight: '5px' }} /> {project.liveLabel}
                     </a>
-                    <a href={project.codeLink} className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                    <a href={project.codeLink} className="btn btn-brand-outline" target="_blank" rel="noopener noreferrer">
                       <FaGithub style={{ marginRight: '5px' }} /> Ver codigo
                     </a>
                   </div>

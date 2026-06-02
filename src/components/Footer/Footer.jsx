@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <FadeInWrapper animationClass="slide-in-top" delay={0.5}>
-      <footer className={`py-5 ${theme === 'dark' ? 'bg-dark-theme text-light' : 'bg-light-theme text-dark'}`}>
+      <footer className={`site-footer py-5 ${theme === 'dark' ? 'bg-dark-theme text-light' : 'bg-light-theme text-dark'}`}>
         <div className="container">
           <div className="row justify-content-between text-center">
             <div className="col-md-6">

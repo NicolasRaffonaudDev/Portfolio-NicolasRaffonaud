@@ -42,19 +42,43 @@ Flujo sugerido:
 
 ### CV
 
-El portfolio ya tiene preparado el CTA del CV. Para activarlo como descarga directa:
+El portfolio ya usa el CV publico desde:
 
-1. Colocar el archivo en `public/assets/Nicolas-Gabriel-Raffonaud-CV.pdf`
-2. Cambiar `cvAvailable` a `true` en [src/data/portfolioData.jsx](./src/data/portfolioData.jsx)
+`public/assets/Nicolas-Gabriel-Raffonaud-CV.pdf`
 
-Mientras no exista el PDF, el sitio muestra `Solicitar CV` como CTA por email.
+El CTA actual apunta a:
+
+`/assets/Nicolas-Gabriel-Raffonaud-CV.pdf`
+
+Si en una futura iteracion queres volver al fallback, alcanza con ajustar `cvAvailable` y `cvUrl` en [src/data/portfolioData.jsx](./src/data/portfolioData.jsx).
 
 ### Preview real del portfolio
 
-La card de `Portfolio Personal` ya tiene un mockup profesional. Si queres reemplazarlo por una captura real:
+La card de `Portfolio Personal` ya tiene un mockup profesional y busca automaticamente:
 
-1. Guardar una imagen en `public/assets/projects/portfolio-preview.png`
-2. Actualizar la data del proyecto en [src/data/portfolioData.jsx](./src/data/portfolioData.jsx) para usar ese asset
+- `public/assets/projects/portfolio-preview.webp`
+- `public/assets/projects/portfolio-preview.png`
+
+Si no encuentra ninguna, mantiene el placeholder actual.
+
+### Capturas de Raices Puntanas
+
+La galeria del proyecto destacado busca estas rutas, en este orden:
+
+- `public/assets/projects/raices-dashboard.webp`
+- `public/assets/projects/raices-dashboard.png`
+- `public/assets/projects/raices-crm.webp`
+- `public/assets/projects/raices-crm.png`
+- `public/assets/projects/raices-lotes.webp`
+- `public/assets/projects/raices-lotes.png`
+- `public/assets/projects/raices-detail.webp`
+- `public/assets/projects/raices-detail.png`
+- `public/assets/projects/raices-login.webp`
+- `public/assets/projects/raices-login.png`
+- `public/assets/projects/raices-mobile.webp`
+- `public/assets/projects/raices-mobile.png`
+
+La UI no se rompe si faltan archivos: muestra la galeria solo con las capturas disponibles y, si no hay ninguna, conserva el mockup tecnico.
 
 ## SEO y share
 

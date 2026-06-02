@@ -1,9 +1,9 @@
 .bg-dark-theme {
-  background-color: #1a1a1a;
+  background-color: transparent;
 }
 
 .bg-light-theme {
-  background-color: #f8f9fa;
+  background-color: transparent;
 }
 
 .text-dark {
@@ -14,13 +14,39 @@
   color: #f8f9fa !important;
 }
 
+.site-footer {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.56);
+  backdrop-filter: blur(14px);
+}
+
+body.dark .site-footer {
+  border-top-color: rgba(255, 255, 255, 0.08);
+  background: rgba(9, 17, 31, 0.58);
+}
+
 .footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-icon:hover {
   color: #0077b5;
   transform: scale(1.1);
+}
+
+body.dark .footer-icon {
+  background: rgba(15, 23, 42, 0.58);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .footer-icon.linkedin:hover {

@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
 
+:root {
+  --brand-primary: #2563eb;
+  --brand-primary-strong: #1d4ed8;
+  --brand-primary-soft: rgba(37, 99, 235, 0.12);
+  --brand-secondary: #0f172a;
+  --brand-surface-light: rgba(255, 255, 255, 0.72);
+  --brand-surface-dark: rgba(17, 24, 39, 0.7);
+  --brand-border-light: rgba(148, 163, 184, 0.18);
+  --brand-border-dark: rgba(255, 255, 255, 0.09);
+  --brand-shadow-light: 0 14px 35px rgba(15, 23, 42, 0.08);
+  --brand-shadow-dark: 0 18px 42px rgba(2, 6, 23, 0.35);
+  --brand-text-muted-light: #5f6c7b;
+  --brand-text-muted-dark: #c9d2dd;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -26,18 +42,22 @@ button,
 
 
 body.light {
-  background-color: #f0f0f0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.08), transparent 28%),
+    radial-gradient(circle at 80% 10%, rgba(148, 163, 184, 0.12), transparent 26%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 52%, #f5f7fb 100%);
   color: #000;
 }
 
 body.dark {
-  background-color: #181818;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.18), transparent 24%),
+    radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.14), transparent 22%),
+    linear-gradient(180deg, #09111f 0%, #111827 48%, #0b1220 100%);
   color: #fff;
 }
 
 button {
-  padding: 10px;
-  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -51,4 +71,122 @@ button {
 section {
   position: relative;
   z-index: 1;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  padding: 0.72rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+}
+
+.btn-brand-primary,
+.btn-primary {
+  background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+  border-color: rgba(37, 99, 235, 0.65);
+  color: #fff !important;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
+}
+
+.btn-brand-primary:hover,
+.btn-primary:hover {
+  background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
+  box-shadow: 0 16px 28px rgba(37, 99, 235, 0.28);
+}
+
+.btn-brand-secondary {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.14), rgba(37, 99, 235, 0.1));
+  border-color: rgba(37, 99, 235, 0.18);
+  color: #1d4ed8 !important;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.08);
+}
+
+.btn-brand-secondary:hover {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.2), rgba(37, 99, 235, 0.14));
+}
+
+.btn-brand-outline,
+.btn-outline-secondary,
+.btn-outline-dark,
+.btn-outline-light {
+  background: rgba(255, 255, 255, 0.68);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #0f172a !important;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.05);
+}
+
+.btn-brand-outline:hover,
+.btn-outline-secondary:hover,
+.btn-outline-dark:hover,
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-brand-contact,
+.btn-outline-primary {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.96));
+  border-color: rgba(15, 23, 42, 0.82);
+  color: #f8fafc !important;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.18);
+}
+
+.btn-brand-contact:hover,
+.btn-outline-primary:hover {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 1), rgba(30, 41, 59, 1));
+}
+
+body.dark .btn-brand-secondary {
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.18), rgba(59, 130, 246, 0.14));
+  border-color: rgba(96, 165, 250, 0.22);
+  color: #bfdbfe !important;
+}
+
+body.dark .btn-brand-outline,
+body.dark .btn-outline-secondary,
+body.dark .btn-outline-dark,
+body.dark .btn-outline-light {
+  background: rgba(15, 23, 42, 0.58);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #eff6ff !important;
+  box-shadow: 0 12px 22px rgba(2, 6, 23, 0.2);
+}
+
+body.dark .btn-brand-outline:hover,
+body.dark .btn-outline-secondary:hover,
+body.dark .btn-outline-dark:hover,
+body.dark .btn-outline-light:hover {
+  background: rgba(15, 23, 42, 0.82);
+}
+
+body.dark .btn-brand-contact,
+body.dark .btn-outline-primary {
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.2), rgba(29, 78, 216, 0.3));
+  border-color: rgba(96, 165, 250, 0.3);
+  color: #eff6ff !important;
+}
+
+body.dark .btn-brand-contact:hover,
+body.dark .btn-outline-primary:hover {
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.28), rgba(29, 78, 216, 0.38));
 }

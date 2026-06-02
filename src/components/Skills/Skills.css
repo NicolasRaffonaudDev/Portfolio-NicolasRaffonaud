@@ -23,8 +23,12 @@ body.dark .skills-intro {
 }
 
 .skill-card {
-  padding: 1rem 0.95rem 0.9rem;
-  min-height: 218px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  padding: 0.85rem 0.85rem 0.78rem;
+  min-height: 168px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -40,9 +44,9 @@ body.dark .skills-intro {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  margin-bottom: 0.4rem;
-  font-size: 2.75rem;
+  min-height: 40px;
+  margin-bottom: 0.2rem;
+  font-size: 2.5rem;
   color: #b0b0b0;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -53,14 +57,14 @@ body.dark .skills-intro {
 }
 
 .skill-name {
-  margin-bottom: 0.35rem;
-  font-size: 1.02rem;
+  margin-bottom: 0.18rem;
+  font-size: 0.98rem;
   font-weight: bold;
 }
 
 .skill-description {
-  font-size: 0.84rem;
-  line-height: 1.45;
+  font-size: 0.78rem;
+  line-height: 1.35;
   color: #6c757d;
   margin-bottom: 0;
 }
@@ -93,6 +97,6 @@ body.dark .skills-intro {
   }
 
   .skill-card {
-    min-height: 198px;
+    min-height: 154px;
   }
 }

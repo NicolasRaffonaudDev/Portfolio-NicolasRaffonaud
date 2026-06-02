@@ -25,11 +25,11 @@ const Header = () => {
           <p className="hero-availability mx-auto">{profile.availability}</p>
 
           <div className="hero-cta-group">
-            <a className="btn btn-primary" href="#featured-project">
+            <a className="btn btn-primary btn-brand-primary" href="#featured-project">
               Ver proyectos
             </a>
             <a
-              className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-dark'}`}
+              className="btn btn-brand-outline"
               href={profile.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Header = () => {
               GitHub
             </a>
             <a
-              className="btn btn-outline-primary"
+              className="btn btn-brand-secondary"
               href={profile.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -46,17 +46,17 @@ const Header = () => {
             </a>
             {hasCv && (
               <a
-                className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-secondary'}`}
+                className="btn btn-brand-contact"
                 href={profile.cvUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ver CV
+                Descargar CV
               </a>
             )}
             {!hasCv && (
               <a
-                className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-secondary'}`}
+                className="btn btn-brand-contact"
                 href={cvCtaHref}
                 target="_blank"
                 rel="noopener noreferrer"

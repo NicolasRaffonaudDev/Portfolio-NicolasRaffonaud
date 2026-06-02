@@ -2,12 +2,19 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: transparent;
-  border: none;
+  width: 52px;
+  height: 52px;
+  margin-top: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 999px;
   cursor: pointer;
   outline: none;
-  font-size: 2rem;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: 1.65rem;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .theme-toggle-button:hover {
@@ -27,9 +34,11 @@
 }
 
 body.light .theme-toggle-button {
-  color: #000;
+  color: #0f172a;
 }
 
 body.dark .theme-toggle-button {
   color: #fff;
+  background: rgba(15, 23, 42, 0.72);
+  border-color: rgba(255, 255, 255, 0.08);
 }

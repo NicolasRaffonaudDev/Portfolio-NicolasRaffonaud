@@ -38,7 +38,7 @@ export const profile = {
   whatsappUrl: 'https://wa.me/5491126252321',
   siteUrl: 'https://nicolasraffonaud-portfolio.netlify.app/',
   cvUrl: '/assets/Nicolas-Gabriel-Raffonaud-CV.pdf',
-  cvAvailable: false,
+  cvAvailable: true,
   cvFileName: 'public/assets/Nicolas-Gabriel-Raffonaud-CV.pdf',
 };
 
@@ -83,6 +83,56 @@ export const featuredProject = {
     'CRM',
     'Gestion de imagenes',
   ],
+  gallery: [
+    {
+      key: 'dashboard',
+      label: 'Dashboard',
+      sources: [
+        '/assets/projects/raices-dashboard.webp',
+        '/assets/projects/raices-dashboard.png',
+      ],
+    },
+    {
+      key: 'crm',
+      label: 'CRM',
+      sources: [
+        '/assets/projects/raices-crm.webp',
+        '/assets/projects/raices-crm.png',
+      ],
+    },
+    {
+      key: 'lotes',
+      label: 'Lotes',
+      sources: [
+        '/assets/projects/raices-lotes.webp',
+        '/assets/projects/raices-lotes.png',
+      ],
+    },
+    {
+      key: 'detail',
+      label: 'Detalle',
+      sources: [
+        '/assets/projects/raices-detail.webp',
+        '/assets/projects/raices-detail.png',
+      ],
+    },
+    {
+      key: 'login',
+      label: 'Login',
+      sources: [
+        '/assets/projects/raices-login.webp',
+        '/assets/projects/raices-login.png',
+      ],
+    },
+    {
+      key: 'mobile',
+      label: 'Mobile',
+      sources: [
+        '/assets/projects/raices-mobile.webp',
+        '/assets/projects/raices-mobile.png',
+      ],
+    },
+  ],
   features: [
     'Autenticacion JWT y sistema de roles.',
     'CRUD de lotes, clientes, ventas e inventario.',
@@ -122,12 +172,16 @@ export const secondaryProjects = [
     description:
       'Portfolio desarrollado desde cero como parte de mi evolucion profesional, aplicando React, Vite, componentizacion, responsive design, modo claro/oscuro, animaciones, organizacion de datos y optimizacion de presentacion para recruiters.',
     previewType: 'portfolio',
+    previewSources: [
+      '/assets/projects/portfolio-preview.webp',
+      '/assets/projects/portfolio-preview.png',
+    ],
     liveLink: 'https://nicolasraffonaud-portfolio.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/Portfolio-NicolasRaffonaud',
     liveLabel: 'Ver sitio',
     tech: ['React', 'Vite', 'JavaScript', 'Bootstrap/CSS', 'tsparticles'],
     deploy: 'Netlify',
-    note: 'Listo para reemplazar este mockup por una captura real en public/assets/projects/portfolio-preview.png cuando quieras sumar screenshot propio.',
+    note: 'Usa preview real si encuentra public/assets/projects/portfolio-preview.webp o .png; si no, conserva el mockup profesional.',
   },
 ];
 

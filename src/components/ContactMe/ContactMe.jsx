@@ -80,29 +80,29 @@ const ContactMe = () => {
                                 />
                             </div>
 
-                            <button type="submit" className="btn btn-primary btn-block">Abrir email</button>
+                            <button type="submit" className="btn btn-primary btn-brand-primary btn-block">Abrir email</button>
                         </form>
                     </div>
                 </div>
 
                 <div className="text-center mt-5 contact-actions">
                     <p className="mb-3">Tambien podes contactarme directo por:</p>
-                    <a href={`mailto:${profile.email}`} className="btn btn-outline-secondary mx-2" target="_blank" rel="noopener noreferrer">
+                    <a href={`mailto:${profile.email}`} className="btn btn-brand-contact mx-2" target="_blank" rel="noopener noreferrer">
                         <FaEnvelope style={{ marginRight: '8px' }} /> Email
                     </a>
-                    <a href={profile.githubUrl} className="btn btn-outline-dark mx-2" target="_blank" rel="noopener noreferrer">
+                    <a href={profile.githubUrl} className="btn btn-brand-outline mx-2" target="_blank" rel="noopener noreferrer">
                         <FaGithub style={{ marginRight: '8px' }} /> GitHub
                     </a>
-                    <a href={profile.linkedinUrl} className="btn btn-outline-primary mx-2" target="_blank" rel="noopener noreferrer">
+                    <a href={profile.linkedinUrl} className="btn btn-brand-secondary mx-2" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn
                     </a>
                     <a
                         href={hasCv ? profile.cvUrl : `mailto:${profile.email}?subject=Solicitud%20de%20CV%20-%20Nicolas%20Raffonaud`}
-                        className="btn btn-outline-secondary mx-2"
+                        className="btn btn-brand-outline mx-2"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {hasCv ? 'Ver CV' : 'Solicitar CV'}
+                        {hasCv ? 'Descargar CV' : 'Solicitar CV'}
                     </a>
                 </div>
             </FadeInWrapper>
