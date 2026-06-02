@@ -86,7 +86,7 @@ const ContactMe = () => {
                 </div>
 
                 <div className="text-center mt-5 contact-actions">
-                    <p className="mb-3">Tambien podes contactarme directo por:</p>
+                    
                     <a href={`mailto:${profile.email}`} className="btn btn-brand-contact mx-2" target="_blank" rel="noopener noreferrer">
                         <FaEnvelope style={{ marginRight: '8px' }} /> Email
                     </a>

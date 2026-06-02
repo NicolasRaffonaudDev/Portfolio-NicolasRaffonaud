@@ -1,7 +1,7 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import './ParticlesBackground.css'
-import fuegos from '../../assets/geometryy-rem.png'
+import fuegos from '../../assets/geometry.webp'
 
 const ParticlesBackground = () => {
   const particlesInit = async (main) => {
