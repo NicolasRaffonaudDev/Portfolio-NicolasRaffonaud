@@ -21,38 +21,38 @@ const Footer = () => {
             <div className="col-md-6">
               <h5>Tambien podes encontrarme en:</h5>
               <div>
-                <a
+                {/* <a
                   href={profile.linkedinUrl}
                   className="footer-icon linkedin me-3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin size={30} />
-                </a>
-                <a
+                </a> */}
+                {/* <a
                   href={profile.githubUrl}
                   className="footer-icon github me-3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaGithub size={30} />
-                </a>
+                </a> */}
                 <a
                   href={profile.whatsappUrl}
                   className="footer-icon whatsapp me-3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaWhatsapp size={30} />
+                  <FaWhatsapp size={50} />
                 </a>
-                <a
+                {/* <a
                   href={`mailto:${profile.email}`}
                   className="footer-icon gmail"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaEnvelope size={30} />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

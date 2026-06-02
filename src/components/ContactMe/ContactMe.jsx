@@ -88,7 +88,7 @@ const ContactMe = () => {
                 <div className="text-center mt-5 contact-actions">
                     
                     <a href={`mailto:${profile.email}`} className="btn btn-brand-contact mx-2" target="_blank" rel="noopener noreferrer">
-                        <FaEnvelope style={{ marginRight: '8px' }} /> Enviar consulta
+                        <FaEnvelope style={{ marginRight: '8px' }} /> Mail
                     </a>
                     <a href={profile.githubUrl} className="btn btn-brand-outline mx-2" target="_blank" rel="noopener noreferrer">
                         <FaGithub style={{ marginRight: '8px' }} /> GitHub
