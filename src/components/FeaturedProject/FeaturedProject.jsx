@@ -88,8 +88,9 @@ const FeaturedProject = () => {
                   <div className="featured-gallery-main">
                     <img
                       src={selectedItem.src}
-                      alt={`${featuredProject.title} - ${selectedItem.label}`}
+                      alt={selectedItem.alt ?? `${featuredProject.title} - ${selectedItem.label}`}
                       className="featured-gallery-image"
+                      decoding="async"
                     />
                     <span className="featured-gallery-caption">{selectedItem.label}</span>
                   </div>
@@ -102,8 +103,15 @@ const FeaturedProject = () => {
                         className={`featured-thumb ${selectedKey === item.key ? 'active' : ''}`}
                         onClick={() => setSelectedKey(item.key)}
                         aria-label={`Ver captura ${item.label}`}
+                        aria-pressed={selectedKey === item.key}
                       >
-                        <img src={item.src} alt={item.label} className="featured-thumb-image" />
+                        <img
+                          src={item.src}
+                          alt={item.alt ?? item.label}
+                          className="featured-thumb-image"
+                          loading="lazy"
+                          decoding="async"
+                        />
                         <span>{item.label}</span>
                       </button>
                     ))}

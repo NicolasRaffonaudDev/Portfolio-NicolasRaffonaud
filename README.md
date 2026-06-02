@@ -59,7 +59,15 @@ La card de `Portfolio Personal` ya tiene un mockup profesional y busca automatic
 - `public/assets/projects/portfolio-preview.webp`
 - `public/assets/projects/portfolio-preview.png`
 
-Si no encuentra ninguna, mantiene el placeholder actual.
+Si encuentra una de esas rutas, usa la captura real. Si no encuentra ninguna, mantiene el placeholder actual.
+
+### Preview temporal de GuaridaHW
+
+Mientras no haya capturas definitivas del ecommerce, la card usa:
+
+- `public/assets/projects/guaridahw2.gif`
+
+El GIF actual funciona como preview real temporal, pero conviene reemplazarlo mas adelante por una captura en WebP o un video mas liviano para mejorar performance.
 
 ### Capturas de Raices Puntanas
 
@@ -87,13 +95,15 @@ El proyecto ya incluye:
 - `lang="es"`
 - title profesional
 - meta description orientada a recruiters
-- Open Graph basico
-- Twitter card basica
+- Open Graph con imagen social
+- Twitter card con imagen social
 - canonical de Netlify
 
-Siguiente mejora recomendada:
+La imagen social actual usa:
 
-- agregar una imagen social dedicada para `og:image` y `twitter:image`
+- `public/assets/projects/portfolio-preview.png`
+
+Si en una futura iteracion queres una pieza mas editorial para compartir en LinkedIn o X, conviene preparar una imagen dedicada para `og:image` y `twitter:image`.
 
 ## Dominio propio
 

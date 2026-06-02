@@ -37,7 +37,19 @@ const ProjectVisual = ({ project }) => {
   }, [project.preview, project.previewSources]);
 
   if (resolvedPreview) {
-    return <img src={resolvedPreview} alt={project.title} className="card-img-top" />;
+    const previewClassName = resolvedPreview.endsWith('.gif')
+      ? 'card-img-top project-preview-media project-preview-gif'
+      : 'card-img-top project-preview-media';
+
+    return (
+      <img
+        src={resolvedPreview}
+        alt={project.previewAlt ?? `Preview de ${project.title}`}
+        className={previewClassName}
+        loading="lazy"
+        decoding="async"
+      />
+    );
   }
 
   if (project.previewType === 'store') {
@@ -136,10 +148,22 @@ const Projects = () => {
                   <p className="project-note">{project.note}</p>
 
                   <div className="project-actions mt-auto">
-                    <a href={project.liveLink} className="btn btn-primary btn-brand-primary" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.liveLink}
+                      className="btn btn-primary btn-brand-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.liveLabel} ${project.title}`}
+                    >
                       <FaArrowRight style={{ marginRight: '5px' }} /> {project.liveLabel}
                     </a>
-                    <a href={project.codeLink} className="btn btn-brand-outline" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.codeLink}
+                      className="btn btn-brand-outline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Ver codigo de ${project.title} en GitHub`}
+                    >
                       <FaGithub style={{ marginRight: '5px' }} /> Ver codigo
                     </a>
                   </div>

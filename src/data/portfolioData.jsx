@@ -36,7 +36,7 @@ export const profile = {
   githubUrl: 'https://github.com/NicolasRaffonaudDev',
   linkedinUrl: 'https://ar.linkedin.com/in/nicolas-gabriel-raffonaud-9aa988106',
   whatsappUrl: 'https://wa.me/5491126252321',
-  siteUrl: 'https://nicolasraffonaud-portfolio.netlify.app/',
+  siteUrl: 'https://nicolasraffonaud.netlify.app/',
   cvUrl: '/assets/Nicolas-Gabriel-Raffonaud-CV.pdf',
   cvAvailable: true,
   cvFileName: 'public/assets/Nicolas-Gabriel-Raffonaud-CV.pdf',
@@ -87,6 +87,7 @@ export const featuredProject = {
     {
       key: 'dashboard',
       label: 'Dashboard',
+      alt: 'Dashboard administrativo con metricas y accesos rapidos',
       sources: [
         '/assets/projects/raices-dashboard.webp',
         '/assets/projects/raices-dashboard.png',
@@ -95,6 +96,7 @@ export const featuredProject = {
     {
       key: 'crm',
       label: 'CRM',
+      alt: 'Vista CRM con gestion de clientes y seguimiento comercial',
       sources: [
         '/assets/projects/raices-crm.webp',
         '/assets/projects/raices-crm.png',
@@ -103,6 +105,7 @@ export const featuredProject = {
     {
       key: 'lotes',
       label: 'Lotes',
+      alt: 'Modulo de lotes con listado visual y datos de gestion',
       sources: [
         '/assets/projects/raices-lotes.webp',
         '/assets/projects/raices-lotes.png',
@@ -111,6 +114,7 @@ export const featuredProject = {
     {
       key: 'detail',
       label: 'Detalle',
+      alt: 'Pantalla de detalle de propiedad o lote con informacion ampliada',
       sources: [
         '/assets/projects/raices-detail.webp',
         '/assets/projects/raices-detail.png',
@@ -119,6 +123,7 @@ export const featuredProject = {
     {
       key: 'login',
       label: 'Login',
+      alt: 'Pantalla de login con acceso por roles',
       sources: [
         '/assets/projects/raices-login.webp',
         '/assets/projects/raices-login.png',
@@ -127,6 +132,7 @@ export const featuredProject = {
     {
       key: 'mobile',
       label: 'Mobile',
+      alt: 'Vista mobile responsive de Raices Puntanas',
       sources: [
         '/assets/projects/raices-mobile.webp',
         '/assets/projects/raices-mobile.png',
@@ -157,13 +163,15 @@ export const secondaryProjects = [
     status: 'Proyecto secundario',
     description:
       'Proyecto de aprendizaje solido enfocado en arquitectura frontend con React, React Router y Firebase. Incluye SPA, carrito de compras, componentes reutilizables, render dinamico y una base muy util para entender organizacion de estado, navegacion y flujos de ecommerce.',
+    previewSources: ['/assets/projects/guaridahw2.gif'],
+    previewAlt: 'Preview temporal del ecommerce GuaridaHW con animacion del catalogo',
     previewType: 'store',
     liveLink: 'https://guaridahw.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw',
     liveLabel: 'Ver demo',
     tech: ['React', 'React Router', 'Firebase', 'Bootstrap', 'SPA'],
     deploy: 'Netlify',
-    note: 'Lo presento como proyecto de aprendizaje fuerte, no como mi caso principal de producto.',
+    note: 'Usa un GIF temporal real como preview. A futuro conviene reemplazarlo por capturas optimizadas en WebP o un video mas liviano.',
   },
   {
     title: 'Portfolio Personal',
@@ -176,12 +184,13 @@ export const secondaryProjects = [
       '/assets/projects/portfolio-preview.webp',
       '/assets/projects/portfolio-preview.png',
     ],
-    liveLink: 'https://nicolasraffonaud-portfolio.netlify.app/',
+    previewAlt: 'Captura real del portfolio con hero y proyecto destacado',
+    liveLink: 'https://nicolasraffonaud.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/Portfolio-NicolasRaffonaud',
     liveLabel: 'Ver sitio',
     tech: ['React', 'Vite', 'JavaScript', 'Bootstrap/CSS', 'tsparticles'],
     deploy: 'Netlify',
-    note: 'Usa preview real si encuentra public/assets/projects/portfolio-preview.webp o .png; si no, conserva el mockup profesional.',
+    note: 'Ya usa captura real desde public/assets/projects/portfolio-preview.webp o .png cuando el asset esta disponible.',
   },
 ];
 

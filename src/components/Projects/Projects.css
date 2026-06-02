@@ -39,6 +39,14 @@ body.dark .projects-intro {
   object-fit: cover;
 }
 
+.project-preview-media {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.project-preview-gif {
+  object-position: top center;
+}
+
 .project-card-header {
   display: flex;
   flex-wrap: wrap;
