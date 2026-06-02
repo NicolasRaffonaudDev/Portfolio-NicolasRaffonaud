@@ -67,7 +67,7 @@ Mientras no haya capturas definitivas del ecommerce, la card usa:
 
 - `public/assets/projects/guaridahw2.gif`
 
-El GIF actual funciona como preview real temporal, pero conviene reemplazarlo mas adelante por una captura en WebP o un video mas liviano para mejorar performance.
+El GIF actual funciona como preview real temporal, pero pesa aproximadamente `33.9 MB`. Conviene reemplazarlo por una captura en WebP, un video `.mp4` corto o una imagen estatica optimizada para mejorar performance.
 
 ### Capturas de Raices Puntanas
 
@@ -101,9 +101,9 @@ El proyecto ya incluye:
 
 La imagen social actual usa:
 
-- `public/assets/projects/portfolio-preview.png`
+- `public/assets/social-preview.png`
 
-Si en una futura iteracion queres una pieza mas editorial para compartir en LinkedIn o X, conviene preparar una imagen dedicada para `og:image` y `twitter:image`.
+En esta version se arma a partir del screenshot real del portfolio. Si en una futura iteracion queres una pieza mas editorial para compartir en LinkedIn o X, conviene preparar una imagen dedicada para `og:image` y `twitter:image`.
 
 ## Dominio propio
 

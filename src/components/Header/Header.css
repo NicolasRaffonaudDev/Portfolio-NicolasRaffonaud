@@ -15,8 +15,8 @@
 }
 
 .hero-section {
-  padding-top: 4.5rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 5rem !important;
+  padding-bottom: 3.35rem !important;
   border-bottom: 1px solid rgba(148, 163, 184, 0.16);
   background: rgba(255, 255, 255, 0.52);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
@@ -27,6 +27,10 @@ body.dark .hero-section {
   background: rgba(9, 17, 31, 0.58);
   border-bottom-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 14px 36px rgba(2, 6, 23, 0.18);
+}
+
+.hero-section .container {
+  max-width: 980px;
 }
 
 .hero-eyebrow {
@@ -48,29 +52,60 @@ body.dark .hero-eyebrow {
   color: #8ab4ff;
 }
 
+.hero-section h1 {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: clamp(2.9rem, 7vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
 .hero-headline {
-  max-width: 760px;
-  margin: 1rem auto 0;
-  font-size: 1.4rem;
+  max-width: 720px;
+  margin: 1.1rem auto 0;
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  line-height: 1.45;
+  color: #0f172a;
+}
+
+body.dark .hero-headline {
+  color: #eff6ff;
 }
 
 .hero-copy,
 .hero-availability {
-  max-width: 760px;
+  max-width: 720px;
 }
 
 .hero-copy {
-  margin-bottom: 0.75rem;
-  font-size: 1.05rem;
+  margin-bottom: 0.85rem;
+  font-size: 1.04rem;
+  line-height: 1.8;
+  color: #475569;
+}
+
+body.dark .hero-copy {
+  color: #dbe4ee;
 }
 
 .hero-availability {
-  margin-bottom: 1.75rem;
-  color: #6c757d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.9rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  color: #5f6c7b;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
 }
 
 body.dark .hero-availability {
-  color: #c2c2c2;
+  background: rgba(15, 23, 42, 0.56);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
 }
 
 .hero-cta-group {
@@ -82,7 +117,7 @@ body.dark .hero-availability {
 }
 
 .hero-nav {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
 .hero-nav-list {
@@ -119,15 +154,29 @@ body.dark .hero-availability {
 
 @media (max-width: 576px) {
   .hero-section {
-    padding-top: 3rem !important;
+    padding-top: 3.4rem !important;
+    padding-bottom: 2.6rem !important;
   }
 
   .hero-headline {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
   }
 
-  .hero-copy,
-  .hero-availability {
+  .hero-copy {
     font-size: 0.95rem;
+  }
+
+  .hero-availability {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-cta-group {
+    gap: 0.6rem;
+  }
+
+  .hero-nav {
+    margin-top: 1rem;
   }
 }

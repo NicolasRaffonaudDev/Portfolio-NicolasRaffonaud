@@ -49,11 +49,11 @@ const ParticlesBackground = () => {
               distance: 555,
               line_linked: {
                 opacity: 0.6, // OPACIDAD DE LINEAS
-                color: "#ff5722", // COLOR DE LINEAS
+                color: "#0099ff", // COLOR DE LINEAS
                 width: 2, // GROSOR DE LINEAS
                 shadow: {
                   enable: true,
-                  color: "#ff5722",
+                  color: "#0099ff",
                   blur: 5 // Efecto de desenfoque para la sombra
                 }
               }
