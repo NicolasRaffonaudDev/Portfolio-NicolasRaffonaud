@@ -61,13 +61,17 @@ La card de `Portfolio Personal` ya tiene un mockup profesional y busca automatic
 
 Si encuentra una de esas rutas, usa la captura real. Si no encuentra ninguna, mantiene el placeholder actual.
 
-### Preview temporal de GuaridaHW
+### Capturas de GuaridaHW
 
-Mientras no haya capturas definitivas del ecommerce, la card usa:
+La card de `GuaridaHW` ya usa capturas reales del ecommerce y arma una galeria compacta con:
 
-- `public/assets/projects/guaridahw2.gif`
+- `public/assets/projects/guaridahw-home.png`
+- `public/assets/projects/guaridahw-catalogo.png`
+- `public/assets/projects/guaridahw-filtros.png`
+- `public/assets/projects/guaridahw-detail.png`
+- `public/assets/projects/guaridahw-cart.png`
 
-El GIF actual funciona como preview real temporal, pero pesa aproximadamente `33.9 MB`. Conviene reemplazarlo por una captura en WebP, un video `.mp4` corto o una imagen estatica optimizada para mejorar performance.
+El archivo `public/assets/projects/guaridahw2.gif` ya no se usa en el sitio. Si no lo necesitas como respaldo, se puede eliminar manualmente mas adelante.
 
 ### Capturas de Raices Puntanas
 

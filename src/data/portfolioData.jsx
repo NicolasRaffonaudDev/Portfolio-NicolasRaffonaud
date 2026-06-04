@@ -166,15 +166,45 @@ export const secondaryProjects = [
     status: 'Aprendizaje aplicado',
     description:
       'Proyecto de aprendizaje en React enfocado en arquitectura frontend. Incluye SPA, carrito de compras, componentes reutilizables, render dinamico y una base solida para trabajar navegacion, estado y flujos de ecommerce.',
-    previewSources: ['/assets/projects/guaridahw2.gif'],
-    previewAlt: 'Preview temporal del ecommerce GuaridaHW con animacion del catalogo',
+    previewGallery: [
+      {
+        key: 'home',
+        label: 'Home',
+        alt: 'Home del ecommerce GuaridaHW con hero y accesos principales',
+        sources: ['/assets/projects/guaridahw-home.png'],
+      },
+      {
+        key: 'catalogo',
+        label: 'Catalogo',
+        alt: 'Catalogo de productos de GuaridaHW con cards y navegacion SPA',
+        sources: ['/assets/projects/guaridahw-catalogo.png'],
+      },
+      {
+        key: 'filtros',
+        label: 'Filtros',
+        alt: 'Vista de filtros de productos en GuaridaHW',
+        sources: ['/assets/projects/guaridahw-filtros.png'],
+      },
+      {
+        key: 'detail',
+        label: 'Detalle',
+        alt: 'Pantalla de detalle de producto en GuaridaHW',
+        sources: ['/assets/projects/guaridahw-detail.png'],
+      },
+      {
+        key: 'cart',
+        label: 'Carrito',
+        alt: 'Vista del carrito de compras de GuaridaHW',
+        sources: ['/assets/projects/guaridahw-cart.png'],
+      },
+    ],
     previewType: 'store',
     liveLink: 'https://guaridahw.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/guaridahw',
     liveLabel: 'Ver demo',
     tech: ['React', 'React Router', 'Firebase', 'Bootstrap', 'SPA'],
     deploy: 'Netlify',
-    note: 'Lo presento como una base fuerte de aprendizaje frontend. El preview actual es temporal y mas adelante conviene reemplazarlo por capturas optimizadas.',
+    note: 'Lo presento como una base fuerte de aprendizaje frontend. Ahora usa capturas reales del flujo de ecommerce sin competir con el proyecto principal.',
   },
   {
     title: 'Portfolio Personal',

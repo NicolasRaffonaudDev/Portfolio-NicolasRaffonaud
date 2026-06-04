@@ -8,11 +8,32 @@ import './Projects.css'
 
 const ProjectVisual = ({ project }) => {
   const [resolvedPreview, setResolvedPreview] = useState(project.preview ?? null);
+  const [galleryItems, setGalleryItems] = useState([]);
+  const [selectedKey, setSelectedKey] = useState(project.previewGallery?.[0]?.key ?? null);
 
   useEffect(() => {
     let mounted = true;
 
     const loadPreview = async () => {
+      if (project.previewGallery?.length) {
+        const resolvedGallery = await Promise.all(
+          project.previewGallery.map(async (item) => {
+            const src = await resolveAssetSource(item.sources);
+            return src ? { ...item, src } : null;
+          })
+        );
+
+        if (!mounted) {
+          return;
+        }
+
+        const availableItems = resolvedGallery.filter(Boolean);
+        setGalleryItems(availableItems);
+        setSelectedKey(availableItems[0]?.key ?? null);
+        setResolvedPreview(null);
+        return;
+      }
+
       if (project.preview) {
         setResolvedPreview(project.preview);
         return;
@@ -34,7 +55,49 @@ const ProjectVisual = ({ project }) => {
     return () => {
       mounted = false;
     };
-  }, [project.preview, project.previewSources]);
+  }, [project.preview, project.previewGallery, project.previewSources]);
+
+  const selectedGalleryItem =
+    galleryItems.find((item) => item.key === selectedKey) ?? galleryItems[0] ?? null;
+
+  if (selectedGalleryItem) {
+    return (
+      <div className="project-gallery-shell">
+        <div className="project-gallery-main">
+          <img
+            src={selectedGalleryItem.src}
+            alt={selectedGalleryItem.alt ?? `Preview de ${project.title}`}
+            className="card-img-top project-preview-media project-gallery-main-image"
+            loading="lazy"
+            decoding="async"
+          />
+          <span className="project-gallery-caption">{selectedGalleryItem.label}</span>
+        </div>
+
+        <div className="project-gallery-thumbs" aria-label={`Galeria de ${project.title}`}>
+          {galleryItems.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              className={`project-gallery-thumb ${selectedKey === item.key ? 'active' : ''}`}
+              onClick={() => setSelectedKey(item.key)}
+              aria-label={`Ver captura ${item.label}`}
+              aria-pressed={selectedKey === item.key}
+            >
+              <img
+                src={item.src}
+                alt={item.alt ?? item.label}
+                className="project-gallery-thumb-image"
+                loading="lazy"
+                decoding="async"
+              />
+              <span>{item.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   if (resolvedPreview) {
     const previewClassName = resolvedPreview.endsWith('.gif')
