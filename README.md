@@ -56,10 +56,9 @@ Si en una futura iteracion queres volver al fallback, alcanza con ajustar `cvAva
 
 La card de `Portfolio Personal` ya tiene un mockup profesional y busca automaticamente:
 
-- `public/assets/projects/portfolio-preview.webp`
 - `public/assets/projects/portfolio-preview.png`
 
-Si encuentra una de esas rutas, usa la captura real. Si no encuentra ninguna, mantiene el placeholder actual.
+Si encuentra esa ruta, usa la captura real. Si no, mantiene el placeholder actual.
 
 ### Capturas de GuaridaHW
 
@@ -75,19 +74,13 @@ El archivo `public/assets/projects/guaridahw2.gif` ya no se usa en el sitio. Si 
 
 ### Capturas de Raices Puntanas
 
-La galeria del proyecto destacado busca estas rutas, en este orden:
+La galeria del proyecto destacado busca estas rutas reales:
 
-- `public/assets/projects/raices-dashboard.webp`
 - `public/assets/projects/raices-dashboard.png`
-- `public/assets/projects/raices-crm.webp`
 - `public/assets/projects/raices-crm.png`
-- `public/assets/projects/raices-lotes.webp`
 - `public/assets/projects/raices-lotes.png`
-- `public/assets/projects/raices-detail.webp`
 - `public/assets/projects/raices-detail.png`
-- `public/assets/projects/raices-login.webp`
 - `public/assets/projects/raices-login.png`
-- `public/assets/projects/raices-mobile.webp`
 - `public/assets/projects/raices-mobile.png`
 
 La UI no se rompe si faltan archivos: muestra la galeria solo con las capturas disponibles y, si no hay ninguna, conserva el mockup tecnico.

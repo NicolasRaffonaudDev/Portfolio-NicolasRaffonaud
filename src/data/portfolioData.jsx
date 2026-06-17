@@ -90,56 +90,38 @@ export const featuredProject = {
       key: 'dashboard',
       label: 'Dashboard',
       alt: 'Dashboard administrativo con metricas y accesos rapidos',
-      sources: [
-        '/assets/projects/raices-dashboard.webp',
-        '/assets/projects/raices-dashboard.png',
-      ],
+      sources: ['/assets/projects/raices-dashboard.png'],
     },
     {
       key: 'crm',
       label: 'CRM',
       alt: 'Vista CRM con gestion de clientes y seguimiento comercial',
-      sources: [
-        '/assets/projects/raices-crm.webp',
-        '/assets/projects/raices-crm.png',
-      ],
+      sources: ['/assets/projects/raices-crm.png'],
     },
     {
       key: 'lotes',
       label: 'Lotes',
       alt: 'Modulo de lotes con listado visual y datos de gestion',
-      sources: [
-        '/assets/projects/raices-lotes.webp',
-        '/assets/projects/raices-lotes.png',
-      ],
+      sources: ['/assets/projects/raices-lotes.png'],
     },
     {
       key: 'detail',
       label: 'Detalle',
       alt: 'Pantalla de detalle de propiedad o lote con informacion ampliada',
-      sources: [
-        '/assets/projects/raices-detail.webp',
-        '/assets/projects/raices-detail.png',
-      ],
+      sources: ['/assets/projects/raices-detail.png'],
     },
     {
       key: 'login',
       label: 'Login',
       alt: 'Pantalla de login con acceso por roles',
-      sources: [
-        '/assets/projects/raices-login.webp',
-        '/assets/projects/raices-login.png',
-      ],
+      sources: ['/assets/projects/raices-login.png'],
     },
     {
       key: 'mobile',
       label: 'Mobile',
       alt: 'Vista mobile responsive de Raices Puntanas',
       variant: 'mobile',
-      sources: [
-        '/assets/projects/raices-mobile.webp',
-        '/assets/projects/raices-mobile.png',
-      ],
+      sources: ['/assets/projects/raices-mobile.png'],
     },
   ],
   features: [
@@ -213,10 +195,7 @@ export const secondaryProjects = [
     description:
       'Portfolio desarrollado desde cero como parte de mi evolucion profesional, aplicando React, Vite, componentizacion, responsive design, modo claro/oscuro, animaciones y una presentacion pensada para recruiters.',
     previewType: 'portfolio',
-    previewSources: [
-      '/assets/projects/portfolio-preview.webp',
-      '/assets/projects/portfolio-preview.png',
-    ],
+    previewSources: ['/assets/projects/portfolio-preview.png'],
     previewAlt: 'Captura real del portfolio con hero y proyecto destacado',
     liveLink: 'https://nicolasraffonaud.netlify.app/',
     codeLink: 'https://github.com/NicolasRaffonaudDev/Portfolio-NicolasRaffonaud',
